@@ -38,8 +38,8 @@ function Hero() {
               <Link to="/signup" className=' py-1.5 px-5 bg-white/20 text-white rounded-full text-[13px] '>Create an account</Link>
             </section>
           </div>
-          <div className='flex flex-1 items-end justify-end z-30 border-t-10 border-blue-700 pt-4'>
-            <img src="https://img.freepik.com/premium-photo/neon-wireframe-laptop-laptop-s-neon-outline-glows-against-dark_454018-3385.jpg?semt=ais_hybrid&w=740&q=80" className='sm:block hiddenw-[40%] h-full object-left object-cover rounded-2xl border-10 border-white' alt="" />
+          <div className='flex flex-1 items-end justify-end z-30 border-t-10 border-blue-700 pt-4 '>
+            <img src="/hero2.png" className='sm:block hidden w-[70%] h-full object-left object-cover rounded-2xl border-10  border-white' alt="" />
           </div>
         </section>
       </main>
