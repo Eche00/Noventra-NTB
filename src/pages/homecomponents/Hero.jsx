@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 function Hero() {
   return (
     <div className='max-w-[90%]  w-full mx-auto z-10'>
-      <main className='flex mm:flex-row flex-col gap-4'>
+      <main className='flex mm:flex-row flex-col-reverse gap-4'>
         <section className='relative flex flex-col flex-1 bg-blue-700/30 h-[80vh] rounded-4xl overflow-hidden'>
           <div className='flex flex-wrap items-center justify-start gap-2 p-4 z-30'>
             <button className=' py-1 px-3 bg-white text-black shadow-2xl rounded-full text-[13px]'>Efficiency</button>
@@ -29,9 +29,9 @@ function Hero() {
 
 
         </section>
-        <section className='relative flex flex-col flex-1 bg-blue-700/30 h-[80vh] rounded-4xl overflow-hidden'>
+        <section className='relative flex flex-col flex-1 sm:bg-blue-700/30 h-[80vh] rounded-4xl overflow-hidden'>
           <div className='flex flex-col gap-4 p-4'>
-            <h1 class="text-2xl md:text-4xl font-bold text-blue-700 leading-tight ">Bank smarter, not harder, anywhere & anytime.</h1>
+            <h1 class="text-3xl md:text-4xl font-bold text-blue-700 leading-tight ">Bank smarter, not harder, anywhere & anytime.</h1>
             <p class="text-sm md:text-xl text-gray-700 leading-relaxed ">Instant transfers, digital loans, and real-time insights turn your financial plans into achievements without stepping into a branch.</p>
             <section className='md:flex flex-1 hidden items-center justify-start gap-2 '>
               <Link to="/signin" className=' py-1.5 px-5 bg-blue-700 text-white rounded-full text-[13px] '>Log in</Link>
@@ -39,7 +39,7 @@ function Hero() {
             </section>
           </div>
           <div className='flex flex-1 items-end justify-end z-30 border-t-10 border-blue-700 pt-4'>
-            <img src="https://img.freepik.com/premium-photo/neon-wireframe-laptop-laptop-s-neon-outline-glows-against-dark_454018-3385.jpg?semt=ais_hybrid&w=740&q=80" className='w-[40%] h-full object-left object-cover rounded-2xl border-10 border-white' alt="" />
+            <img src="https://img.freepik.com/premium-photo/neon-wireframe-laptop-laptop-s-neon-outline-glows-against-dark_454018-3385.jpg?semt=ais_hybrid&w=740&q=80" className='sm:block hiddenw-[40%] h-full object-left object-cover rounded-2xl border-10 border-white' alt="" />
           </div>
         </section>
       </main>
