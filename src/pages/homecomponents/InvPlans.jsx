@@ -93,27 +93,6 @@ export default function InvPlans() {
                 ))}
             </div>
 
-            {/* Stats */}
-            <div className="mt-5 flex flex-col md:flex-row items-center justify-center gap-12 text-center w-full max-w-4xl">
-                <div>
-                    <h3 className="text-3xl font-bold">7.4%</h3>
-                    <p className="text-gray-400 text-sm">Property Return Rate</p>
-                </div>
-
-                <div className="h-10 w-px bg-gray-600 hidden md:block" />
-
-                <div>
-                    <h3 className="text-3xl font-bold">3,856</h3>
-                    <p className="text-gray-400 text-sm">Property in Sell & Rent</p>
-                </div>
-
-                <div className="h-10 w-px bg-gray-600 hidden md:block" />
-
-                <div>
-                    <h3 className="text-3xl font-bold">2,540</h3>
-                    <p className="text-gray-400 text-sm"> Completed Transactions</p>
-                </div>
-            </div>
         </main>
     );
 }

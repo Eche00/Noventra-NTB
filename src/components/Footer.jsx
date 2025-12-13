@@ -1,59 +1,92 @@
-import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Public, School, Work } from "@mui/icons-material";
+import React from "react";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <div>
-      <section className='flex sm:flex-row flex-col justify-between md:w-[80%]  w-[90%] mx-auto py-12'>
-        {/* logo */}
-        <div className='flex-1 text-[#100A55] text-[20px] font-bold'>
-          <Link to="/" className=" text-[34px] font-extrabold">ℭ</Link>EET
+    <footer className="bg-blue-700 text-white mt-10">
+      <section className="w-[90%] md:w-[85%] mx-auto py-16 grid md:grid-cols-2 gap-12">
+
+        {/* LEFT SIDE */}
+        <div className="space-y-6">
+          <img src="https://static.vecteezy.com/system/resources/thumbnails/050/001/482/small/digital-wallet-e-wallet-online-payment-by-digital-wallet-mobile-banking-money-transaction-e-commerce-circuit-board-background-wireframe-hand-touching-digital-interface-vector.jpg" className="w-full max-h-[300px] object-cover rounded-2xl" alt="" />
+
+          <p className="text-2xl md:text-3xl font-semibold leading-snug text-gray-100">
+            Navigate complexity with a trusted capital markets services
+            partner at your side
+          </p>
+
+          <p className="text-sm text-gray-300 max-w-md">
+            We help individuals and businesses unlock global opportunities
+            through smart financial solutions, international partnerships,
+            and secure cross-border transactions.
+          </p>
         </div>
-        {/* nav links */}
-        <section className="flex flex-wrap gap-12 flex-1">
-          <nav className='flex flex-col items-center  text-[#100A55] text-[12px] font-medium'>
-            <h2 class="text-[16px] font-bold text-[#100A55] mb-2">
-              Pages
-            </h2>
-            <NavLink to="/" className={({ isActive }) => isActive ? "border-b-2 border-[#7065F0] text-[#7065F0]" : ""}>Home</NavLink>
-            <NavLink to="/properties" className={({ isActive }) => isActive ? "border-b-2 border-[#7065F0] text-[#7065F0]" : ""}>Properties</NavLink>
-            <NavLink to="/escrow" className={({ isActive }) => isActive ? "border-b-2 border-[#7065F0] text-[#7065F0]" : ""}>Escrow</NavLink>
-          </nav>
-          <nav className='flex flex-col items-center  text-[#100A55] text-[12px] font-medium'>
-            <h2 class="text-[16px] font-bold text-[#100A55] mb-2">
-              Home
-            </h2>
-            <p >Home</p>
-            <p>Properties</p>
-            <p>Escrow</p>
-          </nav>
-          <nav className='flex flex-col items-center  text-[#100A55] text-[12px] font-medium'>
-            <h2 class="text-[16px] font-bold text-[#100A55] mb-2">
-              Properties
-            </h2>
-            <p>Home</p>
-            <p >Properties</p>
-            <p >Escrow</p>
-          </nav>
-          <nav className='flex flex-col items-center  text-[#100A55] text-[12px] font-medium'>
-            <h2 class="text-[16px] font-bold text-[#100A55] mb-2">
-              Escrow
-            </h2>
-            <p >Home</p>
-            <p >Properties</p>
-            <p>Escrow</p>
-          </nav>
-        </section>
+
+        {/* RIGHT SIDE */}
+        <div className="flex-1 space-y-10">
+
+          {/* ITEM 1 */}
+          <div className="flex gap-4">
+            <span className="w-[50px] h-[50px] rounded-full px-2 bg-white/50 flex items-center justify-center">
+              <Public fontSize="medium" />
+            </span>
+            <div>
+              <h3 className="font-bold uppercase text-sm tracking-wide">
+                International Work & Investment
+              </h3>
+              <p className="text-gray-300 text-md mt-1 leading-relaxed">
+                Access global career paths and investment options, from growing your
+                professional journey to positioning your finances in stable,
+                high-performing economies worldwide.
+              </p>
+            </div>
+          </div>
+
+          {/* ITEM 2 */}
+          <div className="flex gap-4">
+            <span className="w-[50px] h-[50px] rounded-full px-2 bg-white/50 flex items-center justify-center">
+              <School fontSize="medium" />
+            </span>
+            <div>
+              <h3 className="font-bold uppercase text-sm tracking-wide">
+                Study & Relocate Overseas
+              </h3>
+              <p className="text-gray-300 text-md mt-1 leading-relaxed">
+                Move abroad with confidence, explore quality education options,
+                relocation pathways, and the essential resources needed for a smooth
+                and successful transition.
+              </p>
+            </div>
+          </div>
+
+          {/* ITEM 3 */}
+          <div className="flex gap-4">
+            <span className="w-[50px] h-[50px] rounded-full px-2 bg-white/50 flex items-center justify-center">
+              <Work fontSize="medium" />
+            </span>
+            <div>
+              <h3 className="font-bold uppercase text-sm tracking-wide">
+                Cross-Border Business & Partnerships
+              </h3>
+              <p className="text-gray-300 text-md mt-1 leading-relaxed">
+                Manage international transactions, oversee foreign investments, and
+                form trusted partnerships through secure and efficient global
+                financial systems.
+              </p>
+            </div>
+          </div>
+
+        </div>
 
       </section>
 
-      <section className='border-t-[1.5px] border-[#E8E6F9] py-6 flex items-center justify-center'>
-        <h2 class="text-[16px] font-[400] text-gray-500 mb-2 text-center">
-          ©2023 CuttingEdgeEscrow&Title. All rights reserved
-        </h2>
+      {/* BOTTOM */}
+      <section className="border-t border-white/10 py-6 text-center text-sm text-gray-300">
+        © {new Date().getFullYear()} Sky High National Trust Bank. All rights reserved.
       </section>
-    </div>
-  )
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;

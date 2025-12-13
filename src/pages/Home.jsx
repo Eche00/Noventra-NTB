@@ -11,7 +11,7 @@ function Home() {
     <div>
       <div className=' w-full  min-h-screen py-24'><Hero /></div>
       <div className=' w-full  min-h-[80vh] '><About /></div>
-      <div className=' w-full  min-h-[80vh] bg-blue-700/10 py-10 '><WeDo /></div>
+      <div className=' w-full  min-h-[60vh] bg-blue-700/10 py-10 '><WeDo /></div>
       {/* <div className=' w-full  min-h-screen'><ListingCta /></div> */}
       <div className=' w-full  min-h-screen'><InvPlans /></div>
       <div className=' w-full  min-h-screen'><Testimonial /></div>

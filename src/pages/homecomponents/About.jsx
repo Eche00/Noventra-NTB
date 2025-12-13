@@ -65,7 +65,7 @@ function About() {
                             </Link>
                         </div>
 
-                        <div className='flex items-end justify-end w-full '>
+                        <div className='flex items-end justify-end w-full sm:mt-0 mt-5'>
                             {/* {aboutsvg} */}
                             <img src="/hero.webp" className='max-w-[360px] max-h-[254px] w-full h-full rounded-tl-2xl' alt="" />
                         </div>
