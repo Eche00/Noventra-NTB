@@ -18,10 +18,10 @@ function Mobilenav() {
             {/* nav links */}
             <nav className='w-[90%] mx-auto flex flex-col  gap-4  text-[#100A55] text-[16px] font-medium'>
                 <NavLink to="/" className={({ isActive }) => isActive ? "border-b-2 border-blue-700 text-blue-700" : ""}>Home</NavLink>
-                <NavLink to="/properties" className={({ isActive }) => isActive ? "border-b-2 border-blue-700 text-blue-700" : ""}>Properties</NavLink>
-                <NavLink to="/escrow" className={({ isActive }) => isActive ? "border-b-2 border-blue-700 text-blue-700" : ""}>Escrow</NavLink>
-                <NavLink to="/escrow" className={({ isActive }) => isActive ? "border-b-2 border-blue-700 text-blue-700" : ""}>Escrow</NavLink>
-                <NavLink to="/escrow" className={({ isActive }) => isActive ? "border-b-2 border-blue-700 text-blue-700" : ""}>Escrow</NavLink>
+                <NavLink to="/about" className={({ isActive }) => isActive ? "border-b-2 border-blue-700 text-blue-700" : ""}>About</NavLink>
+                <NavLink to="/contact-us" className={({ isActive }) => isActive ? "border-b-2 border-blue-700 text-blue-700" : ""}>About Us</NavLink>
+                <NavLink to="/investments" className={({ isActive }) => isActive ? "border-b-2 border-blue-700 text-blue-700" : ""}>Investments</NavLink>
+                <NavLink to="/loans" className={({ isActive }) => isActive ? "border-b-2 border-blue-700 text-blue-700" : ""}>Loans</NavLink>
             </nav>
 
             {/* Auth buttons */}

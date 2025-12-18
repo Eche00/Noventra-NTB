@@ -1,5 +1,5 @@
 
-import Listing from '../../pages/propertiescomponent/Listing'
+import Listing from '../../pages/aboutcomponent/Listing'
 
 function DashProperties() {
     return (

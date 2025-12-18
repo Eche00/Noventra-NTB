@@ -33,10 +33,10 @@ function Header() {
                 <div className='md:flex flex-1 hidden items-center justify-center '>
                     <nav className='flex items-center w-fit px-3 py-1 gap-4 bg-gray-100 rounded-full  text-[#100A55] text-[12px] font-medium'>
                         <NavLink to="/" className={({ isActive }) => isActive ? " text-blue-700" : ""}>Home</NavLink>
-                        <NavLink to="/properties" className={({ isActive }) => isActive ? " text-blue-700" : ""}>Properties</NavLink>
-                        <NavLink to="/escrow" className={({ isActive }) => isActive ? " text-blue-700" : ""}>Escrow</NavLink>
-                        <NavLink to="/escrow" className={({ isActive }) => isActive ? " text-blue-700" : ""}>Escrow</NavLink>
-                        <NavLink to="/escrow" className={({ isActive }) => isActive ? " text-blue-700" : ""}>Escrow</NavLink>
+                        <NavLink to="/about" className={({ isActive }) => isActive ? " text-blue-700" : ""}>About</NavLink>
+                        <NavLink to="/contact-us" className={({ isActive }) => isActive ? " text-blue-700" : ""}>Contact Us</NavLink>
+                        <NavLink to="/investments" className={({ isActive }) => isActive ? " text-blue-700" : ""}>Investments</NavLink>
+                        <NavLink to="/loans" className={({ isActive }) => isActive ? " text-blue-700" : ""}>Loans</NavLink>
                     </nav>
                 </div>
                 {/* Auth buttons */}

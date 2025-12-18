@@ -118,15 +118,15 @@ function Signup() {
     };
 
     return (
-        <div className=" sm:flex sm:items-center sm:justify-center min-h-screen bg-linear-to-b from-[#E0DEF7] to-[#E0DEF700]  overflow-hidden overscroll-none ">
+        <div className=" sm:flex sm:items-center sm:justify-center min-h-screen overflow-hidden overscroll-none ">
 
             {/* mobile container   */}
-            <main className="md:bg-white relative flex flex-col  sm:shadow-2xl   sm:rounded-2xl  sm:h-fit h-screen  sm:w-md w-full p-5 my-5">
+            <main className=" relative flex flex-col md:border border-gray-100 md:shadow-xl   sm:rounded-2xl  sm:h-fit h-screen  sm:w-md w-full p-5 my-5">
 
                 {/* logo  */}
-                <div className='text-[#100A55] text-[26px] font-bold text-center'>
-                    <Link to="/" className=" md:text-[42px] text-[32px] font-extrabold">ℭ</Link>EET
-                </div>
+                <Link to="/" className="">
+                    <img src="/logomain.png" className='sm:w-[180px] w-[150px] mx-auto' alt="" />
+                </Link>
 
                 {/* subcontainer  */}
                 <div className=" w-[90%] mx-auto ">
@@ -134,7 +134,7 @@ function Signup() {
                         Create Account
                     </h1>
                     {/* form container  */}
-                    <form className="w-full" onSubmit={handleSubmit}>
+                    <form className="w-full text-[10px]" onSubmit={handleSubmit} >
                         <div className=" flex flex-col gap-[5px]  my-5">
                             {error && <p className=" text-red-500 ">{error}</p>}
                             <p className="  text-black">Name:</p>
@@ -230,7 +230,7 @@ function Signup() {
                         </div>
                         <div className=" w-full flex items-center justify-center flex-col">
                             <button
-                                className="bg-[#7065F0] w-full py-2.5 text-[12px] font-bold text-white rounded-[10px] my-2.5 cursor-pointer"
+                                className="bg-blue-700 w-full py-2.5 text-[12px] font-bold text-white rounded-full my-2.5 cursor-pointer"
                                 type="submit">
                                 {loading ? (
                                     <div role="status">
@@ -256,9 +256,9 @@ function Signup() {
                                 )}
                             </button>
                         </div>
-                        <p className="text-sm font-bold text-center text-black">
-                            Have an account ?{" "}
-                            <Link to="/signin" className=" underline text-[#7065F0]">
+                        <p className="text-[11px] font-bold text-center text-black">
+                            Already have an account ?{" "}
+                            <Link to="/signin" className=" underline text-blue-700">
                                 Sign in
                             </Link>
                         </p>

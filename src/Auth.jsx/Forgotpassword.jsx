@@ -55,17 +55,15 @@ function Forgotpassword() {
     };
 
     return (
-        <div className=" sm:flex sm:items-center sm:justify-center min-h-screen bg-linear-to-b from-[#E0DEF7] to-[#E0DEF700]  overflow-hidden overscroll-none ">
+        <div className=" sm:flex sm:items-center sm:justify-center min-h-screen overflow-hidden overscroll-none ">
 
             {/* mobile container   */}
-            <main className="md:bg-white relative flex flex-col  sm:shadow-2xl   sm:rounded-2xl  sm:h-fit h-screen  sm:w-md w-full p-5 ">
-                {/* exit  */}
-                <Link to="/signin" className="absolute top-5 left-5"><ArrowBackIos /></Link>
+            <main className=" relative flex flex-col md:border border-gray-100 md:shadow-xl   sm:rounded-2xl  sm:h-fit h-screen  sm:w-md w-full p-5 my-5">
 
                 {/* logo  */}
-                <div className='text-[#100A55] text-[26px] font-bold text-center'>
-                    <Link to="/" className=" md:text-[42px] text-[32px] font-extrabold">ℭ</Link>EET
-                </div>
+                <Link to="/" className="">
+                    <img src="/logomain.png" className='sm:w-[180px] w-[150px] mx-auto' alt="" />
+                </Link>
                 {/* subcontainer  */}
                 <div className=" w-[90%] mx-auto ">
                     <h1
@@ -76,7 +74,7 @@ function Forgotpassword() {
                     {/* form container  */}
                     {success ? (
                         <div className=" flex flex-col gap-2.5 items-center justify-center w-full">
-                            <span className=" border-2 border-[#7065F0] p-3 flex items-center justify-center rounded-full w-fit">
+                            <span className=" border-2 border-blue-700 p-3 flex items-center justify-center rounded-full w-fit">
                                 {" "}
                                 <EmailIcon fontSize="large" />
                             </span>
@@ -85,7 +83,7 @@ function Forgotpassword() {
                             </p>
                         </div>
                     ) : (
-                        <form className="w-full" onSubmit={handleSubmit}>
+                        <form className="w-full text-[10px]" onSubmit={handleSubmit}>
                             {messageError && (
                                 <p className=" text-red-600">{messageError}ggggg</p>
                             )}
@@ -118,13 +116,13 @@ function Forgotpassword() {
                             </div>
                             <div className=" w-full flex items-center justify-center flex-col">
                                 <button
-                                    className="bg-[#7065F0] w-full py-2.5 text-[12px] font-bold text-white rounded-[10px] my-2.5 cursor-pointer"
+                                    className="bg-blue-700 w-full py-2.5 text-[12px] font-bold text-white rounded-full my-2.5 cursor-pointer"
                                     type="submit">
                                     {loading ? (
                                         <div role="status">
                                             <svg
                                                 aria-hidden="true"
-                                                className="inline w-4 h-4 text-gray-200 animate-spin  fill-[#7065F0]"
+                                                className="inline w-4 h-4 text-gray-200 animate-spin  fill-blue-700"
                                                 viewBox="0 0 100 101"
                                                 fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">

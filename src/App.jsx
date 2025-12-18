@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Container from './components/Container'
 import Home from './pages/Home'
 import Escrow from './pages/Escrow'
-import Properties from './pages/Properties'
 import ScrollToTop from './components/ScrollToTop'
 import Dashcontainer from './Dashboard/Dashcontainer'
 import Dashboard from './Dashboard/Dashboardpages/Dashboard'
@@ -23,6 +22,10 @@ import Property from './Dashboard/Dashboardpages/Property'
 import Users from './Dashboard/Dashboardpages/Users'
 import AdminTransactions from './Dashboard/Dashboardpages/AdminTransactions'
 import WithdrawalList from './Dashboard/Dashboardpages/WithdrawalList'
+import About from './pages/About'
+import ContactUs from './pages/ContactUs'
+import Investments from './pages/Investments'
+import Loans from './pages/Loans'
 
 function App() {
   return (
@@ -39,8 +42,10 @@ function App() {
         <Routes>
           <Route path='/' element={<Container />} >
             <Route path='/' element={<Home />} />
-            <Route path='/properties' element={<Properties />} />
-            <Route path='/escrow' element={<Escrow />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/contact-us' element={<ContactUs />} />
+            <Route path='/investments' element={<Investments />} />
+            <Route path='/loans' element={<Loans />} />
           </Route>
           <Route path='/dashboard' element={<Dashcontainer />} >
             <Route index element={<Dashboard />} />

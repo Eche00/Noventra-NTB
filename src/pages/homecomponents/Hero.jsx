@@ -39,7 +39,7 @@ function Hero() {
             </section>
           </div>
           <div className='flex flex-1 items-end justify-end z-30 border-t-10 border-blue-700 pt-4 '>
-            <img src="/hero2.png" className='sm:block hidden w-[70%] h-full object-left object-cover rounded-2xl border-10  border-white' alt="" />
+            <img src="/hero2.png" className='sm:block hidden w-[70%] h-full object-left object-cover rounded-4xl border-10  border-white' alt="" />
           </div>
         </section>
       </main>
