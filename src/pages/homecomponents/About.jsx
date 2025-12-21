@@ -1,8 +1,8 @@
-import React from 'react'
-import { aboutsvg, comission, control, insurance, price } from '../../utils/svg'
 import { Link } from 'react-router-dom'
-import Icon from '@mui/material/Icon'
-import { LocalActivity } from '@mui/icons-material'
+import ShieldIcon from '@mui/icons-material/Shield';
+import ElectricBoltIcon from '@mui/icons-material/ElectricBolt';
+import RemoveCircleIcon from '@mui/icons-material/RemoveCircle';
+import AllOutIcon from '@mui/icons-material/AllOut';
 
 function About() {
     return (
@@ -15,37 +15,38 @@ function About() {
 
                         {/* Feature 1  */}
                         <div class="flex flex-col gap-3 bg-blue-700/20 p-4 rounded-2xl">
-                            <span className=' text-blue-700 w-[60px] h-[60px] rounded-full bg-white/50 flex items-center justify-center'><LocalActivity /></span>
-                            <h3 class="text-xl font-semibold text-blue-700">Property Insurance</h3>
+                            <span className=' text-blue-700 w-[60px] h-[60px] rounded-full bg-white/50 flex items-center justify-center'><ShieldIcon /></span>
+                            <h3 class="text-xl font-semibold text-blue-700">Secure Transactions</h3>
                             <p class="text-[#4D5461] text-sm">
-                                We offer our customer property protection of liability coverage and insurance for a better life.
+                                Bank with confidence using industry-grade security to protect your money and personal data.
                             </p>
                         </div>
 
                         {/* Feature 2  */}
                         <div class="flex flex-col gap-3 bg-blue-700/20 p-4 rounded-2xl">
-                            <span className=' text-blue-700 w-[60px] h-[60px] rounded-full bg-white/50 flex items-center justify-center'><LocalActivity /></span>
-                            <h3 class="text-xl font-semibold text-blue-700">Best Price</h3>
+                            <span className=' text-blue-700 w-[60px] h-[60px] rounded-full bg-white/50 flex items-center justify-center'><ElectricBoltIcon /></span>
+                            <h3 class="text-xl font-semibold text-blue-700">Instant Transfers</h3>
                             <p class="text-[#4D5461] text-sm">
-                                Sweet and affordable properties, matching your budget and dream home.
+                                Send and receive money instantly, anytime, without delays or hidden charges.
                             </p>
                         </div>
 
                         {/* Feature 3  */}
                         <div class="flex flex-col gap-3 bg-blue-700/20 p-4 rounded-2xl">
-                            <span className=' text-blue-700 w-[60px] h-[60px] rounded-full bg-white/50 flex items-center justify-center'><LocalActivity /></span>
-                            <h3 class="text-xl font-semibold text-blue-700">Lowest Commission</h3>
-                            <p class="text-[#4D5461] text-sm">
-                                You no longer have to negotiate commissions and haggle with other agents.
+                            <span className=' text-blue-700 w-[60px] h-[60px] rounded-full bg-white/50 flex items-center justify-center'><RemoveCircleIcon /></span>
+                            <h3 class="text-xl font-semibold text-blue-700"> Low Fees
+                            </h3>
+                            <p className="text-[#4D5461] text-sm">
+                                Enjoy transparent pricing with minimal fees—no unnecessary charges or surprises.
                             </p>
                         </div>
 
                         {/* Feature 4  */}
                         <div class="flex flex-col gap-3 bg-blue-700/20 p-4 rounded-2xl">
-                            <span className=' text-blue-700 w-[60px] h-[60px] rounded-full bg-white/50 flex items-center justify-center'><LocalActivity /></span>
+                            <span className=' text-blue-700 w-[60px] h-[60px] rounded-full bg-white/50 flex items-center justify-center'><AllOutIcon /></span>
                             <h3 class="text-xl font-semibold text-blue-700">Overall Control</h3>
                             <p class="text-[#4D5461] text-sm">
-                                You have overall control when it comes to your escrow and balance management.</p>
+                                Track balances, manage spending, and control your account—all from one dashboard.</p>
                         </div>
 
                     </div>
@@ -53,15 +54,16 @@ function About() {
                     <div class="bg-linear-to-b from-blue-700/50 to-[#E0DEF700]  rounded-2xl overflow-hidden   ">
                         <div className=' pt-8 md:px-10 px-6 flex flex-col gap-4'>
                             <h1 class="text-[32px] font-bold text-blue-700 md:leading-[120%] leading-[90%]">
-                                The new way to find <br /> your new home
+                                Built to simplify <br /> modern banking
                             </h1>
 
                             <p class="text-[16px] text-[#100A55] mt-2 leading-[120%] ">
-                                Find your dream place to live in with more than 10k+ properties listed.
+                                We’re creating a secure, seamless digital banking experience that gives you
+                                full control of your money, anytime and anywhere.
                             </p>
 
-                            <Link to="/properties" className="py-1.5 px-5 bg-blue-700 text-white rounded-full text-[13px] w-fit">
-                                Loans
+                            <Link to="/about" className="py-1.5 px-5 bg-blue-700 text-white rounded-full text-[13px] w-fit">
+                                More
                             </Link>
                         </div>
 

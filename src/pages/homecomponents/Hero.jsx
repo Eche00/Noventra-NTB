@@ -15,8 +15,8 @@ function Hero() {
               <button className=' py-1 px-3 bg-white/20 text-white shadow-2xl rounded-full text-[13px] '>Large Coverage</button>
               <button className=' py-1 px-3 bg-white/20 text-white shadow-2xl rounded-full text-[13px] '>Value</button>
             </div>
-            <h1 className='text-[#000929] md:text-[54px] text-[38px] md:text-start text-center font-bold leading-[110%] font-sans bg-white bg-clip-text sm:pl-5'>Buy <span className='text-blue-700'> and </span> rent properties easily</h1>
-            <h3 className='md:text-[20px] text-[16px] font-normal md:text-start text-center sm:pl-5'>We focus on customer satisfaction to buy and even rent properties without any commisions.</h3>
+            <h1 className='text-[#000929] md:text-[54px] text-[38px] md:text-start text-center font-bold leading-[110%] font-sans bg-white bg-clip-text sm:pl-5'>Smarter  <span className='text-blue-700'> banking, </span> built for your life.</h1>
+            <h3 className='md:text-[18px] text-[16px] font-normal md:text-start text-center sm:pl-5 text-gray-900'>We empower clients to act on insights by weaving economic analysis into their core strategy and budgeting processes.</h3>
 
           </div>
 
