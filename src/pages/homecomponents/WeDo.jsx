@@ -5,7 +5,7 @@ function WeDo() {
     return (
         <div>
             <main class="w-[90%] mx-auto ">
-                <p className='w-fit mx-auto px-3 py-1 text-gray-400 text-sm font-normal border-2 border-gray-300 rounded-full my-5'>BANK ON THE GO</p>
+                <p className='w-fit mx-auto px-3 py-1 text-gray-400 text-sm font-normal border-2 border-gray-300 rounded-full my-5 uppercase'>Global</p>
 
                 <h2 class="text-xl md:text-3xl font-bold text-blue-700 leading-tight text-center">Borderless Exchange</h2>
                 <p class="text-sm md:text-xl text-gray-700 leading-relaxed  text-center mb-10">Instant international money exchange.</p>

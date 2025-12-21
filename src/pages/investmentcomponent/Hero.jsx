@@ -1,5 +1,4 @@
-import { LocalActivity } from '@mui/icons-material'
-import React from 'react'
+import { Inventory, JoinFull, RealEstateAgent, ReceiptRounded } from '@mui/icons-material'
 
 function Hero() {
     return (
@@ -9,8 +8,12 @@ function Hero() {
                 {/* left hero  */}
                 <section className='relative flex-1  flex flex-col gap-5 sm:bg-blue-700/30 h-[80vh] rounded-4xl sm:p-4  overflow-hidden'>
                     <div className='flex flex-col gap-8 text-[#000929]  font-bold md:max-w-[544px] w-[90%] md:mx-0 mx-auto z-30'>
-                        <h1 className='text-[#000929] md:text-[54px] text-[38px] md:text-start text-center font-bold leading-[110%] font-sans bg-white bg-clip-text'>Buy <span className='text-blue-700'> and </span> rent properties easily</h1>
-                        <h3 className='md:text-[20px] text-[16px] font-normal md:text-start text-center '>We focus on customer satisfaction to buy and even rent properties without any commisions.</h3>
+                        <h1 className='text-[#000929] md:text-[54px] text-[38px] md:text-start text-center font-bold leading-[110%] font-sans bg-white bg-clip-text'>
+                            Invest <span className='text-blue-700'> smartly </span> and grow your wealth
+                        </h1>
+                        <h3 className='md:text-[20px] text-[16px] font-normal md:text-start text-center'>
+                            We provide secure and reliable investment options designed to help you maximize returns and build a stronger financial future.
+                        </h3>
                     </div>
 
 
@@ -32,42 +35,48 @@ function Hero() {
 
                 </section>
                 {/* right hero  */}
-                <section className='relative flex flex-1 flex-wrap justify-center  gap-4 '>
+                <section className='relative flex flex-1 flex-wrap justify-center gap-4'>
                     <div class="flex flex-col items-center justify-center text-center gap-3 bg-linear-to-tl from-5% from-blue-700/20 to-white shadow-lg p-4 rounded-2xl xl:max-w-[250px] max-w-[300px] ">
                         <h3 class="text-xl font-semibold text-blue-700 flex items-baseline gap-2">
-                            <span className=' text-blue-700 w-[60px] h-[60px] rounded-full bg-white/50 flex items-center justify-center'><LocalActivity /></span>
-                            Property </h3>
+                            <span className=' text-blue-700 w-[60px] h-[60px] rounded-full bg-white/50 flex items-center justify-center'><Inventory /></span>
+                            Stocks
+                        </h3>
                         <p class="text-[#4D5461] text-sm">
-                            We offer our customer property protection of liability coverage and insurance for a better life.
+                            Invest in top-performing stocks to grow your portfolio and earn consistent returns.
                         </p>
                     </div>
+
                     <div class="flex flex-col items-center justify-center text-center gap-3 bg-linear-to-tr from-5% from-blue-700/60 to-white shadow-lg p-4 rounded-2xl xl:max-w-[250px] max-w-[300px]">
                         <h3 class="text-xl font-semibold text-blue-700 flex items-baseline gap-2">
-                            <span className=' text-blue-700 w-[60px] h-[60px] rounded-full bg-white/50 flex items-center justify-center'><LocalActivity /></span>
-                            Property </h3>
+                            <span className=' text-blue-700 w-[60px] h-[60px] rounded-full bg-white/50 flex items-center justify-center'><JoinFull /></span>
+                            Bonds
+                        </h3>
                         <p class="text-[#4D5461] text-sm">
-                            We offer our customer property protection of liability coverage and insurance for a better life.
+                            Secure your funds with government and corporate bonds, offering stable returns over time.
                         </p>
                     </div>
+
                     <div class="flex flex-col items-center justify-center text-center gap-3 bg-linear-to-bl from-5% from-blue-700/60 to-white shadow-lg p-4 rounded-2xl xl:max-w-[250px] max-w-[300px]">
                         <h3 class="text-xl font-semibold text-blue-700 flex items-baseline gap-2">
-                            <span className=' text-blue-700 w-[60px] h-[60px] rounded-full bg-white/50 flex items-center justify-center'><LocalActivity /></span>
-                            Property </h3>
+                            <span className=' text-blue-700 w-[60px] h-[60px] rounded-full bg-white/50 flex items-center justify-center'><ReceiptRounded /></span>
+                            Mutual Funds
+                        </h3>
                         <p class="text-[#4D5461] text-sm">
-                            We offer our customer property protection of liability coverage and insurance for a better life.
+                            Diversify your investments with professionally managed mutual funds for long-term growth.
                         </p>
                     </div>
 
                     <div class="flex flex-col items-center justify-center text-center gap-3 bg-linear-to-br from-5% from-blue-700/20 to-white shadow-lg p-4 rounded-2xl xl:max-w-[250px] max-w-[300px]">
                         <h3 class="text-xl font-semibold text-blue-700 flex items-baseline gap-2">
-                            <span className=' text-blue-700 w-[60px] h-[60px] rounded-full bg-white/50 flex items-center justify-center'><LocalActivity /></span>
-                            Property </h3>
+                            <span className=' text-blue-700 w-[60px] h-[60px] rounded-full bg-white/50 flex items-center justify-center'><RealEstateAgent /></span>
+                            Real Estate Investments
+                        </h3>
                         <p class="text-[#4D5461] text-sm">
-                            We offer our customer property protection of liability coverage and insurance for a better life.
+                            Build wealth through real estate investment opportunities with high potential returns.
                         </p>
                     </div>
-
                 </section>
+
             </main>
         </div>
     )

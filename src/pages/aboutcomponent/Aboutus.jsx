@@ -3,7 +3,7 @@ import { Check, Circle, Key, MonetizationOn } from "@mui/icons-material"
 function Aboutus() {
     return (
         <div className="sm:w-[85%] w-[90%] mx-auto py-[100px] ">
-            <p className='w-fit mx-auto px-3 py-1 text-gray-400 text-sm font-normal border-2 border-gray-300 rounded-full mb-5'>BANK ON THE GO</p>
+            <p className='w-fit mx-auto px-3 py-1 text-gray-400 text-sm font-normal border-2 border-gray-300 rounded-full mb-5 uppercase'>About us</p>
             <div className="flex items-center justify-center">
                 <h1 className=" text-[#1A1A1A] font-[400] sm:text-[44px] text-[22px]   w-full sm:w-[70%]  smm:tracker-[1.28px] leading-[100%] tracker-[0.8px] text-center">
                     Professional Guidance Through Mentorship, Signals, and

@@ -1,6 +1,3 @@
-import { Search } from '@mui/icons-material'
-import React from 'react'
-import { bathrooms, beds, direction, properties, sizes, trusted } from '../../utils/svg'
 
 function Hero() {
 
@@ -11,8 +8,12 @@ function Hero() {
                 {/* left hero  */}
                 <section className='relative flex-1  flex flex-col gap-5 sm:bg-blue-700/30 h-[80vh] rounded-4xl sm:p-4  overflow-hidden'>
                     <div className='flex flex-col gap-8 text-[#000929]  font-bold md:max-w-[544px] w-[90%] md:mx-0 mx-auto z-30'>
-                        <h1 className='text-[#000929] md:text-[54px] text-[38px] md:text-start text-center font-bold leading-[110%] font-sans bg-white bg-clip-text'>Buy <span className='text-blue-700'> and </span> rent properties easily</h1>
-                        <h3 className='md:text-[20px] text-[16px] font-normal md:text-start text-center '>We focus on customer satisfaction to buy and even rent properties without any commisions.</h3>
+                        <h1 className='text-[#000929] md:text-[54px] text-[38px] md:text-start text-center font-bold leading-[110%] font-sans bg-white bg-clip-text'>
+                            Get <span className='text-blue-700'> quick </span> and easy loans
+                        </h1>
+                        <h3 className='md:text-[20px] text-[16px] font-normal md:text-start text-center'>
+                            Access flexible loan options tailored to your needs, with fast approval and transparent terms.
+                        </h3>
                         <div className='flex flex-wrap items-center justify-start gap-2 p-4 z-30 mt-5'>
                             <button className=' py-2 w-[120px] bg-white text-black shadow-2xl rounded-full text-[13px]'>Apply Now</button>
                         </div>
