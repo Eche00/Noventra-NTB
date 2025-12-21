@@ -14,17 +14,16 @@ function Hero() {
                         <h1 className='text-[#000929] md:text-[54px] text-[38px] md:text-start text-center font-bold leading-[110%] font-sans bg-white bg-clip-text'>Buy <span className='text-blue-700'> and </span> rent properties easily</h1>
                         <h3 className='md:text-[20px] text-[16px] font-normal md:text-start text-center '>We focus on customer satisfaction to buy and even rent properties without any commisions.</h3>
                         <div className='flex flex-wrap items-center justify-start gap-2 p-4 z-30 mt-5'>
-                            <button className=' py-2 w-[120px] bg-white text-black shadow-2xl rounded-full text-[13px]'>Saving</button>
-                            <button className=' py-2 w-[120px] bg-white/20 text-white shadow-2xl rounded-full text-[13px] '>Loan</button>
-                            <button className=' py-2 w-[120px] bg-white/20 text-white shadow-2xl rounded-full text-[13px] '>Investments</button>
+                            <button className=' py-2 w-[120px] bg-white text-black shadow-2xl rounded-full text-[13px]'>Apply Now</button>
                         </div>
                     </div>
 
 
 
 
-                    <div className='flex flex-1 items-end justify-start z-30'>
-                        <img src="/hero.webp" className='w-[60%] max-h-[300px] object-cover rounded-2xl' alt="" />
+                    <div className='flex flex-1 items-end md:justify-start justify-between gap-4 z-30'>
+                        <img src="/hero.webp" className='w-[40%] max-h-[300px] object-cover rounded-2xl' alt="" />
+                        <img src="/hero.webp" className='w-[40%] max-h-[300px] object-cover rounded-2xl' alt="" />
                     </div>
 
                     {/* designs */}

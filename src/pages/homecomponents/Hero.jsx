@@ -8,12 +8,18 @@ function Hero() {
     <div className='max-w-[90%]  w-full mx-auto z-10'>
       <main className='flex mm:flex-row flex-col-reverse gap-4'>
         <section className='relative flex flex-col flex-1 bg-blue-700/30 h-[80vh] rounded-4xl overflow-hidden'>
-          <div className='flex flex-wrap items-center justify-start gap-2 p-4 z-30'>
-            <button className=' py-1 px-3 bg-white text-black shadow-2xl rounded-full text-[13px]'>Efficiency</button>
-            <button className=' py-1 px-3 bg-white/20 text-white shadow-2xl rounded-full text-[13px] '>Reliability</button>
-            <button className=' py-1 px-3 bg-white/20 text-white shadow-2xl rounded-full text-[13px] '>Large Coverage</button>
-            <button className=' py-1 px-3 bg-white/20 text-white shadow-2xl rounded-full text-[13px] '>Value</button>
+          <div className='flex flex-col gap-8 text-[#000929]  font-bold md:max-w-[544px] w-[90%] md:mx-0 mx-auto z-30'>
+            <div className='flex flex-wrap items-center justify-start gap-2 p-4 z-30'>
+              <button className=' py-1 px-3 bg-white text-black shadow-2xl rounded-full text-[13px]'>Efficiency</button>
+              <button className=' py-1 px-3 bg-white/20 text-white shadow-2xl rounded-full text-[13px] '>Reliability</button>
+              <button className=' py-1 px-3 bg-white/20 text-white shadow-2xl rounded-full text-[13px] '>Large Coverage</button>
+              <button className=' py-1 px-3 bg-white/20 text-white shadow-2xl rounded-full text-[13px] '>Value</button>
+            </div>
+            <h1 className='text-[#000929] md:text-[54px] text-[38px] md:text-start text-center font-bold leading-[110%] font-sans bg-white bg-clip-text sm:pl-5'>Buy <span className='text-blue-700'> and </span> rent properties easily</h1>
+            <h3 className='md:text-[20px] text-[16px] font-normal md:text-start text-center sm:pl-5'>We focus on customer satisfaction to buy and even rent properties without any commisions.</h3>
+
           </div>
+
           <div className='flex flex-1 items-end justify-start z-30'>
             <img src="/hero.webp" className='w-[60%] max-h-[300px] object-cover rounded-tr-2xl' alt="" />
           </div>

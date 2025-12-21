@@ -74,7 +74,8 @@ function Testimonial() {
     ];
     return (
         <div>
-            <main className="w-full bg-blue-700/20 py-20 flex flex-col items-center text-center px-4">
+            <main className="w-full bg-blue-700/20 py-20 flex flex-col items-center text-center px-4 ">
+
                 <h2 className="text-3xl font-bold text-gray-900">Testimonials</h2>
                 <p className="text-gray-500 mt-2 max-w-xl">
                     See why users rely on our escrow platform every day
@@ -108,6 +109,7 @@ function Testimonial() {
                     />
                 </div>
             </main>
+            <p className='w-fit mx-auto px-3 py-1 text-gray-400 text-sm font-normal border-2 border-gray-300 rounded-full mt-5'>BANK ON THE GO</p>
             <div className="mt-12 flex flex-col lg:flex-row items-center gap-10 max-w-5xl mx-auto">
 
                 {/* Left: Card Info */}

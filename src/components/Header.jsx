@@ -67,7 +67,7 @@ function Header() {
                 <section className='flex md:hidden items-center gap-4 w-fit' onClick={() => setNav(!nav)}>
                     {nav ? <Close fontSize='large' /> : <DragHandleIcon fontSize='large' />}
                 </section>
-                {nav && <Mobilenav />}
+                {nav && <Mobilenav setNav={setNav} />}
             </div>
         </div>
     )

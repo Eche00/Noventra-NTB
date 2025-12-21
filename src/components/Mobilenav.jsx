@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom'
 import { auth } from '../lib/firebase';
 import { onAuthStateChanged } from 'firebase/auth';
 
-function Mobilenav() {
+function Mobilenav({ setNav }) {
     const [user, setUser] = useState(null);
 
     useEffect(() => {
@@ -16,10 +16,10 @@ function Mobilenav() {
         <div className='md:hidden flex flex-col gap-4 fixed top-20 left-0 w-full h-screen bg-white py-4'>
 
             {/* nav links */}
-            <nav className='w-[90%] mx-auto flex flex-col  gap-4  text-[#100A55] text-[16px] font-medium'>
+            <nav className='w-[90%] mx-auto flex flex-col  gap-4  text-[#100A55] text-[16px] font-medium' onClick={() => setNav()}>
                 <NavLink to="/" className={({ isActive }) => isActive ? "border-b-2 border-blue-700 text-blue-700" : ""}>Home</NavLink>
                 <NavLink to="/about" className={({ isActive }) => isActive ? "border-b-2 border-blue-700 text-blue-700" : ""}>About</NavLink>
-                <NavLink to="/contact-us" className={({ isActive }) => isActive ? "border-b-2 border-blue-700 text-blue-700" : ""}>About Us</NavLink>
+                <NavLink to="/contact-us" className={({ isActive }) => isActive ? "border-b-2 border-blue-700 text-blue-700" : ""}>Contact Us</NavLink>
                 <NavLink to="/investments" className={({ isActive }) => isActive ? "border-b-2 border-blue-700 text-blue-700" : ""}>Investments</NavLink>
                 <NavLink to="/loans" className={({ isActive }) => isActive ? "border-b-2 border-blue-700 text-blue-700" : ""}>Loans</NavLink>
             </nav>

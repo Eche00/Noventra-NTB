@@ -49,6 +49,7 @@ export default function InvPlans() {
         <main className="w-full text-black py-20 flex flex-col">
             {/* Header */}
             <div className="w-full text-center mb-16">
+                <p className='w-fit mx-auto px-3 py-1 text-gray-400 text-sm font-normal border-2 border-gray-300 rounded-full mb-5'>BANK ON THE GO</p>
                 <h1 className="text-4xl font-bold mb-4">
                     We make it easy for
                     <span className="text-blue-700"> our customers</span>.
