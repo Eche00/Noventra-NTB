@@ -30,48 +30,49 @@ function Testimonial() {
         });
         return controls.stop;
     }, [xTranslation, width, duration]);
-    const HomeReview = [
+    const ClientTestimonials = [
         {
-            img: '/logomain.png',
+            img: 'https://t3.ftcdn.net/jpg/02/99/04/20/360_F_299042079_vGBD7wIlSeNl7vOevWHiL93G4koMM967.jpg',
             message:
-                "Zion Tech Hub has helped me transition into data analytics smoothly!",
+                "Noventra NTB has completely changed how I manage my money. Sending and receiving funds internationally is now effortless.",
         },
         {
-            img: '/logomain.png',
+            img: 'https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmxhY2slMjBwZXJzb258ZW58MHx8MHx8fDA%3D',
             message:
-                "Thanks to the comprehensive training at Zion Tech Hub, I was able to secure a job shortly after completing the course.",
+                "With Noventra NTB, I can transfer money across borders in minutes. The process is fast, secure, and reliable.",
         },
         {
-            img: '/logomain.png',
+            img: 'https://t3.ftcdn.net/jpg/02/43/76/54/360_F_243765470_a0hN5zuTKIonTbRGldi8KajuvhSiWvDx.jpg',
             message:
-                "What I love most about Zion Tech Hub team is their receptiveness to feedback and consideration of the learners’ requests.",
+                "What I love most about Noventra NTB is the transparency. No hidden charges and real-time updates on every transaction.",
         },
         {
-            img: '/logomain.png',
+            img: 'https://img.freepik.com/free-photo/portrait-smiling-young-man_1268-21877.jpg?semt=ais_hybrid&w=740&q=80',
             message:
-                "I had a fantastic experience in Zion Tech Hub mentorship program. The program was well structured & the mentor was supportive.",
+                "Using Noventra NTB has been a smooth experience. The app is intuitive, and everything I need is just a few taps away.",
         },
         {
-            img: '/logomain.png',
+            img: 'https://thumbs.dreamstime.com/b/portrait-young-african-american-business-woman-black-peop-isolated-white-background-people-33803836.jpg',
             message:
-                "This training in data analytics has had a profound impact on my professional journey! In just a few weeks, I went from a newbie to solution-provider.",
+                "Noventra NTB gave me full control of my finances. Tracking transactions and managing my account has never been this easy.",
         },
         {
-            img: '/logomain.png',
+            img: 'https://img.freepik.com/free-photo/cheerful-guy-enjoying-outdoor-coffee-break_1262-20005.jpg?semt=ais_hybrid&w=740&q=80',
             message:
-                "Beyond technical skills, Ndoma’s emphasis on leveraging LinkedIn for job networking was invaluable!",
+                "The speed of international transfers on Noventra NTB is impressive. It saves me time and stress every time I send money.",
         },
         {
-            img: '/logomain.png',
+            img: 'https://www.shutterstock.com/image-photo/young-asian-woman-professional-entrepreneur-600nw-2127014192.jpg',
             message:
-                "One amazing thing about Zion Tech Hub is giving participants the opportunity to learn from different repertoire of skills and perspective.",
+                "Security was my biggest concern, but Noventra NTB exceeded my expectations. I feel confident banking digitally now.",
         },
         {
-            img: '/logomain.png',
+            img: 'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D',
             message:
-                "Joining Zion Tech Hub is one of the best decision I made in my career. I’ve learnt so much in a short period of time.",
+                "Choosing Noventra NTB was one of the best financial decisions I’ve made. It’s modern, reliable, and built for today’s banking needs.",
         },
     ];
+
     return (
         <div>
             <main className="w-full bg-blue-700/20 py-20 flex flex-col items-center text-center px-4 ">
@@ -85,25 +86,25 @@ function Testimonial() {
                     className="  top-[130px] z-30 flex  gap-6   "
                     ref={ref}
                     style={{ x: xTranslation }}>
-                    {[...HomeReview, ...HomeReview].map((review) => (
+                    {[...ClientTestimonials, ...ClientTestimonials].map((review) => (
                         <ReviewCard review={review} />
                     ))}
                 </motion.div>
                 <div className="flex items-center justify-center gap-4 mt-10">
-                    <div className='w-fit h-fit border-2 border-l-[#E8E6F9]  border-[#7065F0] p-1 rounded-full'>
+                    <div className='w-fit h-fit border-2 border-l-[#E8E6F9]  border-blue-700 p-1 rounded-full'>
                         <img
-                            src="https://img.freepik.com/free-photo/young-woman-with-short-curly-hair-colorful-shirt-looking-confused-standing-white-wall_141793-29361.jpg?semt=ais_hybrid&w=740&q=80"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgPZnsoh9tlFnoEK79W2lmMJBleVBBLFb81Q&s"
                             alt="user"
                             className="w-14 h-14 rounded-full object-cover"
                         />
                     </div>
                     <img
-                        src="https://thumbs.dreamstime.com/b/handsome-african-american-man-beard-having-charming-smile-holding-hands-heart-wanting-to-show-love-sympathy-isolated-117964327.jpg"
+                        src="https://st3.depositphotos.com/1037987/15097/i/450/depositphotos_150975580-stock-photo-portrait-of-businesswoman-in-office.jpg"
                         alt="user"
                         className="w-14 h-14 rounded-full object-cover"
                     />
                     <img
-                        src="https://img.buzzfeed.com/buzzfeed-static/static/2023-05/22/16/asset/ca74781d259d/sub-buzz-1020-1684773196-3.jpg?downsize=700%3A%2A&output-quality=auto&output-format=auto"
+                        src="https://images.pexels.com/photos/6684835/pexels-photo-6684835.jpeg"
                         alt="user"
                         className="w-14 h-14 rounded-full object-cover"
                     />
