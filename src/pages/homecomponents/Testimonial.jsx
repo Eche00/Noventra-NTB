@@ -77,10 +77,14 @@ function Testimonial() {
         <div>
             <main className="w-full bg-blue-700/20 py-20 flex flex-col items-center text-center px-4 ">
 
-                <h2 className="text-3xl font-bold text-gray-900">Testimonials</h2>
-                <p className="text-gray-500 mt-2 max-w-xl">
+                <motion.h2 initial={{ y: 40, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.6, ease: "easeOut" }} className="text-3xl font-bold text-gray-900">Testimonials</motion.h2>
+                <motion.p initial={{ y: 40, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.6, ease: "easeOut" }} className="text-gray-500 mt-2 max-w-xl">
                     See why users rely on our platform every day
-                </p>
+                </motion.p>
 
                 <motion.div
                     className="  top-[130px] z-30 flex  gap-6   "
@@ -90,34 +94,42 @@ function Testimonial() {
                         <ReviewCard review={review} />
                     ))}
                 </motion.div>
-                <div className="flex items-center justify-center gap-4 mt-10">
+                <div className="flex items-center justify-center gap-4 mt-10 ">
                     <div className='w-fit h-fit border-2 border-l-[#E8E6F9]  border-blue-700 p-1 rounded-full'>
-                        <img
+                        <motion.img initial={{ y: 40, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            transition={{ duration: 0.6, ease: "easeOut" }}
                             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgPZnsoh9tlFnoEK79W2lmMJBleVBBLFb81Q&s"
                             alt="user"
                             className="w-14 h-14 rounded-full object-cover"
                         />
                     </div>
-                    <img
+                    <motion.img initial={{ y: 40, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ duration: 0.6, ease: "easeOut" }}
                         src="https://st3.depositphotos.com/1037987/15097/i/450/depositphotos_150975580-stock-photo-portrait-of-businesswoman-in-office.jpg"
                         alt="user"
                         className="w-14 h-14 rounded-full object-cover"
                     />
-                    <img
+                    <motion.img initial={{ y: 40, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ duration: 0.6, ease: "easeOut" }}
                         src="https://images.pexels.com/photos/6684835/pexels-photo-6684835.jpeg"
                         alt="user"
                         className="w-14 h-14 rounded-full object-cover"
                     />
                 </div>
             </main>
-            <p className='w-fit mx-auto px-3 py-1 text-gray-400 text-sm font-normal border-2 border-gray-300 rounded-full mt-5 uppercase'>Virtual Card</p>
+            <motion.p initial={{ y: 40, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.6, ease: "easeOut" }} className='w-fit mx-auto px-3 py-1 text-gray-400 text-sm font-normal border-2 border-gray-300 rounded-full mt-5 uppercase'>Virtual Card</motion.p>
             <div className="mt-12 flex flex-col lg:flex-row items-center gap-10 max-w-5xl mx-auto">
 
                 {/* Left: Card Info */}
                 <motion.div initial={{ x: -60, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 2 }} className="flex-1 space-y-6 relative sm:w-full w-[90%] mx-auto">
+                    transition={{ duration: 2 }} className="flex-1 space-y-6 relative sm:w-full w-[90%] mx-auto px-4">
 
                     {/* Accent line */}
                     <span className="absolute -left-4 top-2 h-12 w-1 rounded-full bg-linear-to-b from-blue-600 to-indigo-500"></span>
@@ -168,7 +180,7 @@ function Testimonial() {
                     whileInView={{ x: 0, opacity: 1 }}
                     whileHover={{ scale: 1.1 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 2 }} className="flex-1 relative flex items-center justify-center">
+                    transition={{ duration: 2 }} className="flex-1 relative flex items-center justify-center ">
 
                     {/* Card Back */}
                     <div className="absolute -top-6 -right-6 w-72 h-44 rounded-2xl bg-linear-to-br from-gray-900 to-gray-700 shadow-lg"></div>

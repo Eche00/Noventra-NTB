@@ -1,22 +1,25 @@
 import { Check, Circle, Key, MonetizationOn } from "@mui/icons-material"
+import { motion } from "framer-motion"
 
 function Aboutus() {
     return (
         <div className="sm:w-[85%] w-[90%] mx-auto py-[100px] ">
-            <p className='w-fit mx-auto px-3 py-1 text-gray-400 text-sm font-normal border-2 border-gray-300 rounded-full mb-5 uppercase'>About us</p>
-            <div className="flex items-center justify-center">
-                <h1 className=" text-[#1A1A1A] font-[400] sm:text-[44px] text-[22px]   w-full sm:w-[70%]  smm:tracker-[1.28px] leading-[100%] tracker-[0.8px] text-center">
-                    Professional Guidance Through Mentorship, Signals, and
-                    <span className=" text-blue-700">  Structured Courses</span>
-                </h1>
-            </div>
+            <motion.p initial={{ y: 40, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.6, ease: "easeOut" }} className='w-fit mx-auto px-3 py-1 text-gray-400 text-sm font-normal border-2 border-gray-300 rounded-full mb-5 uppercase hover:scale-105 cursor-default'>About us</motion.p>
+
 
             <main className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
                 {/* ABOUT THE BANK */}
                 <section className="py-20 flex flex-col lg:flex-row items-center gap-14">
                     {/* Text */}
-                    <div className="flex flex-col gap-5 lg:w-1/2">
+                    <motion.div initial={{ y: 60, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{
+                            duration: 0.6, ease: "easeOut",
+                            delay: 0.45
+                        }} viewport={{ once: true }} className="flex flex-col gap-5 lg:w-1/2">
                         <span className="text-blue-700 font-semibold uppercase tracking-widest sm:text-4xl text-2xl">
                             About Our Bank
                         </span>
@@ -29,10 +32,18 @@ function Aboutus() {
                             We provide secure, fast, and transparent digital banking solutions for
                             individuals and businesses — designed for everyday use.
                         </p>
-                    </div>
+                    </motion.div>
 
                     {/* Image Card */}
-                    <div className="lg:w-1/2 w-full">
+                    <motion.div initial={{ scale: 0.6, opacity: 0 }}
+                        whileInView={{ scale: 1, opacity: 1 }}
+                        transition={{
+                            type: "spring",
+                            stiffness: 300,
+                            damping: 18,
+                            duration: 2,
+                            delay: 0.45
+                        }} viewport={{ once: true }} className="lg:w-1/2 w-full">
                         <div className="relative overflow-hidden rounded-3xl shadow-xl">
                             <img
                                 src="/about1.png"
@@ -41,7 +52,12 @@ function Aboutus() {
                             />
 
                             {/* Overlay */}
-                            <section className="absolute inset-x-0 bottom-0 backdrop-blur-md bg-gradient-to-t from-blue-700 to-blue-700/40 p-8 rounded-t-3xl">
+                            <motion.section initial={{ y: 60, opacity: 0 }}
+                                whileInView={{ y: 0, opacity: 1 }}
+                                transition={{
+                                    duration: 0.6, ease: "easeOut",
+                                    delay: 1
+                                }} viewport={{ once: true }} className="absolute inset-x-0 bottom-0 backdrop-blur-md bg-linear-to-t from-blue-700 to-blue-700/40 p-8 rounded-t-3xl">
                                 <h3 className="text-white text-2xl font-bold mb-2">
                                     Smart Digital Banking <MonetizationOn />
                                 </h3>
@@ -66,19 +82,24 @@ function Aboutus() {
                                         </p>
                                     </div>
                                 </div>
-                            </section>
+                            </motion.section>
                         </div>
 
                         <p className="mt-6 text-gray-500 text-base max-w-md">
                             Our platform simplifies banking while maintaining the highest standards
                             of reliability, security, and transparency.
                         </p>
-                    </div>
+                    </motion.div>
                 </section>
 
                 {/* MISSION & VALUES */}
                 <section className="py-20 flex flex-col lg:flex-row-reverse items-center gap-14">
-                    <div className="flex flex-col gap-5 lg:w-1/2 lg:text-right">
+                    <motion.div initial={{ y: 60, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{
+                            duration: 0.6, ease: "easeOut",
+                            delay: 0.45
+                        }} viewport={{ once: true }} className="flex flex-col gap-5 lg:w-1/2 lg:text-right">
                         <span className="text-blue-700 font-semibold uppercase tracking-widest sm:text-4xl text-2xl">
                             Our Mission
                         </span>
@@ -91,9 +112,17 @@ function Aboutus() {
                             We empower users with simple, transparent tools to control, grow,
                             and protect their finances.
                         </p>
-                    </div>
+                    </motion.div>
 
-                    <div className="lg:w-1/2 w-full">
+                    <motion.div initial={{ scale: 0.6, opacity: 0 }}
+                        whileInView={{ scale: 1, opacity: 1 }}
+                        transition={{
+                            type: "spring",
+                            stiffness: 300,
+                            damping: 18,
+                            duration: 2,
+                            delay: 0.45
+                        }} viewport={{ once: true }} className="lg:w-1/2 w-full">
                         <div className="relative overflow-hidden rounded-3xl shadow-xl">
                             <img
                                 src="/about2.webp"
@@ -101,7 +130,12 @@ function Aboutus() {
                                 alt=""
                             />
 
-                            <section className="absolute inset-x-0 bottom-0 backdrop-blur-md bg-gradient-to-t from-blue-700 to-blue-700/40 p-8 rounded-t-3xl">
+                            <motion.section initial={{ y: 60, opacity: 0 }}
+                                whileInView={{ y: 0, opacity: 1 }}
+                                transition={{
+                                    duration: 0.6, ease: "easeOut",
+                                    delay: 1
+                                }} viewport={{ once: true }} className="absolute inset-x-0 bottom-0 backdrop-blur-md bg-linear-to-t from-blue-700 to-blue-700/40 p-8 rounded-t-3xl">
                                 <h3 className="text-white text-2xl font-bold mb-2">
                                     Trust & Transparency <Key />
                                 </h3>
@@ -109,14 +143,14 @@ function Aboutus() {
                                     Built on ethical practices, strong values, and modern financial
                                     technology.
                                 </p>
-                            </section>
+                            </motion.section>
                         </div>
 
                         <p className="mt-6 text-gray-500 text-base max-w-md">
                             Our mission is to remove complexity from banking and give users confidence
                             in every transaction they make.
                         </p>
-                    </div>
+                    </motion.div>
                 </section>
             </main>
 

@@ -8,8 +8,10 @@ import { motion } from 'framer-motion';
 function About() {
     return (
         <div>
-            <main class="w-[90%] mx-auto  pb-5 md:pb-0">
-                <p className='w-fit mx-auto px-3 py-1 text-gray-400 text-sm font-normal border-2 border-gray-300 rounded-full mb-5 hover:scale-105 cursor-default'>BANK ON THE GO</p>
+            <main class="w-[90%] mx-auto  pb-5 ">
+                <motion.p initial={{ y: 40, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.6, ease: "easeOut" }} className='w-fit mx-auto px-3 py-1 text-gray-400 text-sm font-normal border-2 border-gray-300 rounded-full mb-5 hover:scale-105 cursor-default'>BANK ON THE GO</motion.p>
                 <div class=" grid grid-cols-1 md:grid-cols-2 gap-10">
                     {/* LEFT SIDE FEATURE GRID  */}
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-12">

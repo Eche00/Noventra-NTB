@@ -6,10 +6,16 @@ function WeDo() {
     return (
         <div>
             <main class="w-[90%] mx-auto ">
-                <p className='w-fit mx-auto px-3 py-1 text-gray-400 text-sm font-normal border-2 border-gray-300 rounded-full my-5 uppercase cursor-default hover:scale-105'>Global</p>
+                <motion.p initial={{ y: 40, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.6, ease: "easeOut" }} className='w-fit mx-auto px-3 py-1 text-gray-400 text-sm font-normal border-2 border-gray-300 rounded-full my-5 uppercase cursor-default hover:scale-105'>Global</motion.p>
 
-                <h2 class="text-xl md:text-3xl font-bold text-blue-700 leading-tight text-center">Borderless Exchange</h2>
-                <p class="text-sm md:text-xl text-gray-700 leading-relaxed  text-center mb-10">Instant international money exchange.</p>
+                <motion.h2 initial={{ y: 40, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.6, ease: "easeOut" }} class="text-xl md:text-3xl font-bold text-blue-700 leading-tight text-center">Borderless Exchange</motion.h2>
+                <motion.p initial={{ y: 40, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.6, ease: "easeOut" }} class="text-sm md:text-xl text-gray-700 leading-relaxed  text-center mb-10">Instant international money exchange.</motion.p>
                 <section className='relative flex flex-wrap items-center justify-center gap-8 '>
                     <motion.div initial={{ scale: 0.65, opacity: 0 }}
                         whileInView={{ scale: 1, opacity: 1 }}

@@ -13,7 +13,7 @@ function Mobilenav({ setNav }) {
         return () => unsubscribe();
     }, []);
     return (
-        <div className='md:hidden flex flex-col gap-4 fixed top-20 left-0 w-full h-screen bg-white py-4'>
+        <div className='mmd:hidden flex flex-col gap-4 fixed top-20 left-0 w-full h-screen bg-white py-4'>
 
             {/* nav links */}
             <nav className='w-[90%] mx-auto flex flex-col  gap-4  text-[#100A55] text-[16px] font-medium' onClick={() => setNav()}>

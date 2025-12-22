@@ -1,6 +1,4 @@
-import { Search } from '@mui/icons-material'
-import React from 'react'
-import { bathrooms, beds, direction, properties, sizes, trusted } from '../../utils/svg'
+import { motion } from 'framer-motion'
 
 function Hero() {
 
@@ -9,7 +7,15 @@ function Hero() {
             {/* container  */}
             <main className='flex md:flex-row flex-col items-stretch gap-4  '>
                 {/* left hero  */}
-                <section className='relative flex-1  flex flex-col gap-5 sm:bg-blue-700/30 h-[80vh] rounded-4xl sm:p-4  overflow-hidden'>
+                <motion.section initial={{ scale: 0.85, opacity: 0, y: 20 }}
+                    whileInView={{ scale: 1, opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{
+                        stiffness: 220,
+                        damping: 22,
+                        duration: 1,
+                        delay: 0.2
+                    }} className='relative flex-1  flex flex-col gap-5 sm:bg-blue-700/30 h-[80vh] rounded-4xl sm:p-4  overflow-hidden'>
                     <div className='flex flex-col gap-8 text-[#000929]  font-bold md:max-w-[544px] w-[90%] md:mx-0 mx-auto z-30'>
                         <h1 className='text-[#000929] md:text-[54px] text-[38px] md:text-start text-center font-bold leading-[110%] font-sans bg-white bg-clip-text'>A new standard for digital <span className="text-blue-700"> banking</span></h1>
                         <h3 className='md:text-[20px] text-[16px] font-normal md:text-start text-center '>We focus on security, transparency, and innovation to give you full control of your money anytime, anywhere.</h3>
@@ -38,14 +44,22 @@ function Hero() {
                     <span className='absolute top-[70%] left-[70%] w-[20%] h-full bg-[#476dd6] rounded-[30px] -z-50'></span>
 
 
-                </section>
+                </motion.section>
                 {/* right hero  */}
-                <section className='flex flex-1 items-center justify-center bg-blue-700/30  rounded-4xl p-4 relative z-10 '>
+                <motion.section initial={{ scale: 0.85, opacity: 0, y: 20 }}
+                    whileInView={{ scale: 1, opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{
+                        stiffness: 220,
+                        damping: 22,
+                        duration: 1,
+                        delay: 0.2
+                    }} className='flex flex-1 items-center justify-center bg-blue-700/30  rounded-4xl p-4 relative z-10 '>
 
 
                     <img src="/iPhone-13-PRO.png" alt="hero image" className=' max-h-[70vh] object-cover' />
 
-                </section>
+                </motion.section>
             </main>
         </div>
     )
