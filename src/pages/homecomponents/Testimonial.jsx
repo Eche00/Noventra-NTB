@@ -114,7 +114,10 @@ function Testimonial() {
             <div className="mt-12 flex flex-col lg:flex-row items-center gap-10 max-w-5xl mx-auto">
 
                 {/* Left: Card Info */}
-                <div className="flex-1 space-y-6 relative sm:w-full w-[90%] mx-auto">
+                <motion.div initial={{ x: -60, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 2 }} className="flex-1 space-y-6 relative sm:w-full w-[90%] mx-auto">
 
                     {/* Accent line */}
                     <span className="absolute -left-4 top-2 h-12 w-1 rounded-full bg-linear-to-b from-blue-600 to-indigo-500"></span>
@@ -157,11 +160,15 @@ function Testimonial() {
                         Get Your Card
                         <span className="text-lg">→</span>
                     </button>
-                </div>
+                </motion.div>
 
 
                 {/* Right: Card Preview */}
-                <div className="flex-1 relative flex items-center justify-center">
+                <motion.div initial={{ x: 60, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    whileHover={{ scale: 1.1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 2 }} className="flex-1 relative flex items-center justify-center">
 
                     {/* Card Back */}
                     <div className="absolute -top-6 -right-6 w-72 h-44 rounded-2xl bg-linear-to-br from-gray-900 to-gray-700 shadow-lg"></div>
@@ -182,7 +189,7 @@ function Testimonial() {
                             <span>09 / 28</span>
                         </div>
                     </div>
-                </div>
+                </motion.div>
 
             </div>
 
