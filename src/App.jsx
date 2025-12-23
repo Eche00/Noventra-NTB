@@ -26,6 +26,7 @@ import About from './pages/About'
 import ContactUs from './pages/ContactUs'
 import Investments from './pages/Investments'
 import Loans from './pages/Loans'
+import Transfer from './Dashboard/Dashboardpages/Transfer'
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
           </Route>
           <Route path='/dashboard' element={<Dashcontainer />} >
             <Route index element={<Dashboard />} />
+            <Route path='transfer' element={<Transfer />} />
             <Route path='withdraw' element={<Withdraw />} />
             <Route path='deposit' element={<Deposit />} />
             <Route path='create-escrow' element={<CreateEscrow />} />

@@ -16,7 +16,7 @@ function Sidebar() {
     const { user, handleLogOutUser } = useUserInfo();
 
     return (
-        <div className="bg-blue-700/40  fixed top-0 pt-[73px] left-0 mm:w-[270px] w-[220px] h-screen  border-r border-[#E5E5E5] z-40 overflow-scroll">
+        <div className="bg-blue-700/50  fixed top-0 pt-[73px] left-0 mm:w-[270px] w-[220px] h-screen  border-r border-[#E5E5E5] z-40 overflow-scroll">
             <main className=" w-full h-full flex flex-col">
 
                 {/* nav section  */}
@@ -39,13 +39,13 @@ function Sidebar() {
                             Dashboard
                         </NavLink>
                         <NavLink
-                            to="/dashboard/deposit"
+                            to="/dashboard/transfer"
                             className={({ isActive }) =>
                                 isActive
                                     ? " mm:text-[16px] text-[12px] bg-blue-700 font-semibold  flex items-center mm:gap-3 gap-1 text-[#FFFFFF] py-2 px-3 shadow-[0_0_0_1px_#E5E5E5,0_4px_8px_-5px_rgba(0,0,0,0.15)] rounded-full"
                                     : " mm:text-[16px] text-[12px] text-gray-600 hover:text-gray-800 font-medium  flex items-center mm:gap-3 gap-1 rounded-full py-2 px-3  "
                             }>
-                            <CurrencyExchangeIcon /> Deposit
+                            <CurrencyExchangeIcon /> Transfer
                         </NavLink>
                         <NavLink
                             to="/dashboard/withdraw"
@@ -54,7 +54,7 @@ function Sidebar() {
                                     ? " mm:text-[16px] text-[12px] bg-blue-700 font-semibold  flex items-center mm:gap-3 gap-1 text-[#FFFFFF] py-2 px-3 shadow-[0_0_0_1px_#E5E5E5,0_4px_8px_-5px_rgba(0,0,0,0.15)] rounded-full"
                                     : " mm:text-[16px] text-[12px] text-gray-600 hover:text-gray-800 font-medium  flex items-center mm:gap-3 gap-1 rounded-full py-2 px-3  "
                             }>
-                            <AssuredWorkloadIcon /> Withdraw
+                            <AssuredWorkloadIcon /> Mega FXT
 
                         </NavLink>
                         <NavLink
@@ -76,7 +76,17 @@ function Sidebar() {
                                     : " mm:text-[16px] text-[12px] text-gray-600 hover:text-gray-800 font-medium  flex items-center mm:gap-3 gap-1 rounded-full py-2 px-3  "
                             }>
                             <RoofingIcon />
-                            Properties
+                            Sky Card
+                        </NavLink>
+                        <NavLink
+                            to="/dashboard/properties"
+                            className={({ isActive }) =>
+                                isActive
+                                    ? " mm:text-[16px] text-[12px] bg-blue-700 font-semibold  flex items-center mm:gap-3 gap-1 text-[#FFFFFF] py-2 px-3 shadow-[0_0_0_1px_#E5E5E5,0_4px_8px_-5px_rgba(0,0,0,0.15)] rounded-full"
+                                    : " mm:text-[16px] text-[12px] text-gray-600 hover:text-gray-800 font-medium  flex items-center mm:gap-3 gap-1 rounded-full py-2 px-3  "
+                            }>
+                            <RoofingIcon />
+                            Loans
                         </NavLink>
 
                     </section>
@@ -85,26 +95,8 @@ function Sidebar() {
                         <p className=" text-[#0A0A0A] text-3 font-semibold pb-2 px-3">
                             MANAGEMENT
                         </p>
-                        {/* links  */}
-                        <NavLink
-                            to="/dashboard/escrow-management"
-                            className={({ isActive }) =>
-                                isActive
-                                    ? " mm:text-[16px] text-[12px] bg-blue-700 font-semibold  flex items-center mm:gap-3 gap-1 text-[#FFFFFF] py-2 px-3 shadow-[0_0_0_1px_#E5E5E5,0_4px_8px_-5px_rgba(0,0,0,0.15)] rounded-full"
-                                    : " mm:text-[16px] text-[12px] text-gray-600 hover:text-gray-800 font-medium  flex items-center mm:gap-3 gap-1 rounded-full py-2 px-3  "
-                            }>
-                            <ManageHistoryIcon /> Escrow Management
-                        </NavLink>
-                        <NavLink
-                            to="/dashboard/transactions"
-                            className={({ isActive }) =>
-                                isActive
-                                    ? " mm:text-[16px] text-[12px] bg-blue-700 font-semibold  flex items-center mm:gap-3 gap-1 text-[#FFFFFF] py-2 px-3 shadow-[0_0_0_1px_#E5E5E5,0_4px_8px_-5px_rgba(0,0,0,0.15)] rounded-full"
-                                    : " mm:text-[16px] text-[12px] text-gray-600 hover:text-gray-800 font-medium  flex items-center mm:gap-3 gap-1 rounded-full py-2 px-3  "
-                            }>
-                            <HistoryIcon />
-                            Transactions
-                        </NavLink>
+
+
 
                     </section>
 
@@ -112,20 +104,10 @@ function Sidebar() {
 
                     {user && user.type === 'admin' ?
                         <section className=" flex flex-col gap-1">
-                            <p className=" text-[#0A0A0A] text-3 font-semibold pb-2 px-3">
+                            {/* <p className=" text-[#0A0A0A] text-3 font-semibold pb-2 px-3">
                                 Admin
                             </p>
-                            {/* links  */}
-                            <NavLink
-                                to="/dashboard/property-management"
-                                className={({ isActive }) =>
-                                    isActive
-                                        ? " mm:text-[16px] text-[12px] bg-blue-700 font-semibold  flex items-center mm:gap-3 gap-1 text-[#FFFFFF] py-2 px-3 shadow-[0_0_0_1px_#E5E5E5,0_4px_8px_-5px_rgba(0,0,0,0.15)] rounded-full"
-                                        : " mm:text-[16px] text-[12px] text-gray-600 hover:text-gray-800 font-medium  flex items-center mm:gap-3 gap-1 rounded-full py-2 px-3  "
-                                }>
-                                <RealEstateAgentIcon />
-                                Property Management
-                            </NavLink>
+
 
                             <NavLink
                                 to="/dashboard/withdraw-management"
@@ -156,7 +138,7 @@ function Sidebar() {
                                 }>
                                 <Group />
                                 Users
-                            </NavLink>
+                            </NavLink> */}
                             <NavLink
                                 to="/dashboard/profile"
                                 className={({ isActive }) =>

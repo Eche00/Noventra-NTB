@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 function Loader({ showSignin }) {
     return (
-        <div className="flex flex-col gap-4 items-center justify-center min-h-screen bg-blue-700/50">
+        <div className="flex flex-col gap-4 items-center justify-center min-h-screen ">
 
-            <div className="flex items-center justify-center gap-4 bg-linear-to-b from-blue-700/30 to-white max-w-[420px] w-full rounded-3xl  p-4 py-6 text-center">
+            <div className="flex items-center justify-center gap-4 max-w-[420px] w-full rounded-3xl  p-4 py-6 text-center">
 
                 <div>
                     <AssuredWorkload fontSize="large" className="text-blue-700" />
