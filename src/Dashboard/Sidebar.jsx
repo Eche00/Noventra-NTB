@@ -13,19 +13,12 @@ import HistoryIcon from '@mui/icons-material/History';
 import PersonIcon from '@mui/icons-material/Person';
 import { useUserInfo } from "../utils/userCresidentials";
 function Sidebar() {
-    const { navBarController } = useNavBar();
     const { user, handleLogOutUser } = useUserInfo();
 
     return (
-        <div className="bg-[#E0DEF7]  fixed top-0 left-0 mm:w-[270px] w-[220px] h-screen  border-r border-[#E5E5E5] z-50 overflow-scroll">
+        <div className="bg-blue-700/40  fixed top-0 pt-[73px] left-0 mm:w-[270px] w-[220px] h-screen  border-r border-[#E5E5E5] z-40 overflow-scroll">
             <main className=" w-full h-full flex flex-col">
-                {/* logo */}
-                <section className="flex items-center justify-between">
-                    <div className='text-[#100A55] text-[28px] font-bold px-6'>
-                        <Link to="/" className=" text-[34px] font-extrabold">ℭ</Link>EET
-                    </div>
 
-                </section>
                 {/* nav section  */}
                 <nav className="flex-1 flex flex-col gap-6 py-5 px-4">
                     {/* main menu  */}
@@ -38,8 +31,8 @@ function Sidebar() {
                             to="/dashboard/"
                             className={({ isActive }) =>
                                 isActive
-                                    ? " mm:text-[16px] text-[12px] bg-[#7065F0] font-semibold  flex items-center mm:gap-3 gap-1 text-[#FFFFFF] py-2 px-3 shadow-[0_0_0_1px_#E5E5E5,0_4px_8px_-5px_rgba(0,0,0,0.15)] rounded-lg"
-                                    : " mm:text-[16px] text-[12px] text-gray-600 hover:text-gray-800 font-medium  flex items-center mm:gap-3 gap-1 rounded-lg py-2 px-3  "
+                                    ? " mm:text-[16px] text-[12px] bg-blue-700 font-semibold  flex items-center mm:gap-3 gap-1 text-[#FFFFFF] py-2 px-3 shadow-[0_0_0_1px_#E5E5E5,0_4px_8px_-5px_rgba(0,0,0,0.15)] rounded-full"
+                                    : " mm:text-[16px] text-[12px] text-gray-600 hover:text-gray-800 font-medium  flex items-center mm:gap-3 gap-1 rounded-full py-2 px-3  "
                             }>
                             {/* text-[#0A0A0A] */}
                             <SpaceDashboardIcon />
@@ -49,8 +42,8 @@ function Sidebar() {
                             to="/dashboard/deposit"
                             className={({ isActive }) =>
                                 isActive
-                                    ? " mm:text-[16px] text-[12px] bg-[#7065F0] font-semibold  flex items-center mm:gap-3 gap-1 text-[#FFFFFF] py-2 px-3 shadow-[0_0_0_1px_#E5E5E5,0_4px_8px_-5px_rgba(0,0,0,0.15)] rounded-lg"
-                                    : " mm:text-[16px] text-[12px] text-gray-600 hover:text-gray-800 font-medium  flex items-center mm:gap-3 gap-1 rounded-lg py-2 px-3  "
+                                    ? " mm:text-[16px] text-[12px] bg-blue-700 font-semibold  flex items-center mm:gap-3 gap-1 text-[#FFFFFF] py-2 px-3 shadow-[0_0_0_1px_#E5E5E5,0_4px_8px_-5px_rgba(0,0,0,0.15)] rounded-full"
+                                    : " mm:text-[16px] text-[12px] text-gray-600 hover:text-gray-800 font-medium  flex items-center mm:gap-3 gap-1 rounded-full py-2 px-3  "
                             }>
                             <CurrencyExchangeIcon /> Deposit
                         </NavLink>
@@ -58,8 +51,8 @@ function Sidebar() {
                             to="/dashboard/withdraw"
                             className={({ isActive }) =>
                                 isActive
-                                    ? " mm:text-[16px] text-[12px] bg-[#7065F0] font-semibold  flex items-center mm:gap-3 gap-1 text-[#FFFFFF] py-2 px-3 shadow-[0_0_0_1px_#E5E5E5,0_4px_8px_-5px_rgba(0,0,0,0.15)] rounded-lg"
-                                    : " mm:text-[16px] text-[12px] text-gray-600 hover:text-gray-800 font-medium  flex items-center mm:gap-3 gap-1 rounded-lg py-2 px-3  "
+                                    ? " mm:text-[16px] text-[12px] bg-blue-700 font-semibold  flex items-center mm:gap-3 gap-1 text-[#FFFFFF] py-2 px-3 shadow-[0_0_0_1px_#E5E5E5,0_4px_8px_-5px_rgba(0,0,0,0.15)] rounded-full"
+                                    : " mm:text-[16px] text-[12px] text-gray-600 hover:text-gray-800 font-medium  flex items-center mm:gap-3 gap-1 rounded-full py-2 px-3  "
                             }>
                             <AssuredWorkloadIcon /> Withdraw
 
@@ -68,8 +61,8 @@ function Sidebar() {
                             to="/dashboard/create-escrow"
                             className={({ isActive }) =>
                                 isActive
-                                    ? " mm:text-[16px] text-[12px] bg-[#7065F0] font-semibold  flex items-center mm:gap-3 gap-1 text-[#FFFFFF] py-2 px-3 shadow-[0_0_0_1px_#E5E5E5,0_4px_8px_-5px_rgba(0,0,0,0.15)] rounded-lg"
-                                    : " mm:text-[16px] text-[12px] text-gray-600 hover:text-gray-800 font-medium  flex items-center mm:gap-3 gap-1 rounded-lg py-2 px-3  "
+                                    ? " mm:text-[16px] text-[12px] bg-blue-700 font-semibold  flex items-center mm:gap-3 gap-1 text-[#FFFFFF] py-2 px-3 shadow-[0_0_0_1px_#E5E5E5,0_4px_8px_-5px_rgba(0,0,0,0.15)] rounded-full"
+                                    : " mm:text-[16px] text-[12px] text-gray-600 hover:text-gray-800 font-medium  flex items-center mm:gap-3 gap-1 rounded-full py-2 px-3  "
                             }>
                             <DriveFileRenameOutlineIcon />
                             Create Escrow
@@ -79,8 +72,8 @@ function Sidebar() {
                             to="/dashboard/properties"
                             className={({ isActive }) =>
                                 isActive
-                                    ? " mm:text-[16px] text-[12px] bg-[#7065F0] font-semibold  flex items-center mm:gap-3 gap-1 text-[#FFFFFF] py-2 px-3 shadow-[0_0_0_1px_#E5E5E5,0_4px_8px_-5px_rgba(0,0,0,0.15)] rounded-lg"
-                                    : " mm:text-[16px] text-[12px] text-gray-600 hover:text-gray-800 font-medium  flex items-center mm:gap-3 gap-1 rounded-lg py-2 px-3  "
+                                    ? " mm:text-[16px] text-[12px] bg-blue-700 font-semibold  flex items-center mm:gap-3 gap-1 text-[#FFFFFF] py-2 px-3 shadow-[0_0_0_1px_#E5E5E5,0_4px_8px_-5px_rgba(0,0,0,0.15)] rounded-full"
+                                    : " mm:text-[16px] text-[12px] text-gray-600 hover:text-gray-800 font-medium  flex items-center mm:gap-3 gap-1 rounded-full py-2 px-3  "
                             }>
                             <RoofingIcon />
                             Properties
@@ -97,8 +90,8 @@ function Sidebar() {
                             to="/dashboard/escrow-management"
                             className={({ isActive }) =>
                                 isActive
-                                    ? " mm:text-[16px] text-[12px] bg-[#7065F0] font-semibold  flex items-center mm:gap-3 gap-1 text-[#FFFFFF] py-2 px-3 shadow-[0_0_0_1px_#E5E5E5,0_4px_8px_-5px_rgba(0,0,0,0.15)] rounded-lg"
-                                    : " mm:text-[16px] text-[12px] text-gray-600 hover:text-gray-800 font-medium  flex items-center mm:gap-3 gap-1 rounded-lg py-2 px-3  "
+                                    ? " mm:text-[16px] text-[12px] bg-blue-700 font-semibold  flex items-center mm:gap-3 gap-1 text-[#FFFFFF] py-2 px-3 shadow-[0_0_0_1px_#E5E5E5,0_4px_8px_-5px_rgba(0,0,0,0.15)] rounded-full"
+                                    : " mm:text-[16px] text-[12px] text-gray-600 hover:text-gray-800 font-medium  flex items-center mm:gap-3 gap-1 rounded-full py-2 px-3  "
                             }>
                             <ManageHistoryIcon /> Escrow Management
                         </NavLink>
@@ -106,8 +99,8 @@ function Sidebar() {
                             to="/dashboard/transactions"
                             className={({ isActive }) =>
                                 isActive
-                                    ? " mm:text-[16px] text-[12px] bg-[#7065F0] font-semibold  flex items-center mm:gap-3 gap-1 text-[#FFFFFF] py-2 px-3 shadow-[0_0_0_1px_#E5E5E5,0_4px_8px_-5px_rgba(0,0,0,0.15)] rounded-lg"
-                                    : " mm:text-[16px] text-[12px] text-gray-600 hover:text-gray-800 font-medium  flex items-center mm:gap-3 gap-1 rounded-lg py-2 px-3  "
+                                    ? " mm:text-[16px] text-[12px] bg-blue-700 font-semibold  flex items-center mm:gap-3 gap-1 text-[#FFFFFF] py-2 px-3 shadow-[0_0_0_1px_#E5E5E5,0_4px_8px_-5px_rgba(0,0,0,0.15)] rounded-full"
+                                    : " mm:text-[16px] text-[12px] text-gray-600 hover:text-gray-800 font-medium  flex items-center mm:gap-3 gap-1 rounded-full py-2 px-3  "
                             }>
                             <HistoryIcon />
                             Transactions
@@ -127,8 +120,8 @@ function Sidebar() {
                                 to="/dashboard/property-management"
                                 className={({ isActive }) =>
                                     isActive
-                                        ? " mm:text-[16px] text-[12px] bg-[#7065F0] font-semibold  flex items-center mm:gap-3 gap-1 text-[#FFFFFF] py-2 px-3 shadow-[0_0_0_1px_#E5E5E5,0_4px_8px_-5px_rgba(0,0,0,0.15)] rounded-lg"
-                                        : " mm:text-[16px] text-[12px] text-gray-600 hover:text-gray-800 font-medium  flex items-center mm:gap-3 gap-1 rounded-lg py-2 px-3  "
+                                        ? " mm:text-[16px] text-[12px] bg-blue-700 font-semibold  flex items-center mm:gap-3 gap-1 text-[#FFFFFF] py-2 px-3 shadow-[0_0_0_1px_#E5E5E5,0_4px_8px_-5px_rgba(0,0,0,0.15)] rounded-full"
+                                        : " mm:text-[16px] text-[12px] text-gray-600 hover:text-gray-800 font-medium  flex items-center mm:gap-3 gap-1 rounded-full py-2 px-3  "
                                 }>
                                 <RealEstateAgentIcon />
                                 Property Management
@@ -138,8 +131,8 @@ function Sidebar() {
                                 to="/dashboard/withdraw-management"
                                 className={({ isActive }) =>
                                     isActive
-                                        ? " mm:text-[16px] text-[12px] bg-[#7065F0] font-semibold  flex items-center mm:gap-3 gap-1 text-[#FFFFFF] py-2 px-3 shadow-[0_0_0_1px_#E5E5E5,0_4px_8px_-5px_rgba(0,0,0,0.15)] rounded-lg"
-                                        : " mm:text-[16px] text-[12px] text-gray-600 hover:text-gray-800 font-medium  flex items-center mm:gap-3 gap-1 rounded-lg py-2 px-3  "
+                                        ? " mm:text-[16px] text-[12px] bg-blue-700 font-semibold  flex items-center mm:gap-3 gap-1 text-[#FFFFFF] py-2 px-3 shadow-[0_0_0_1px_#E5E5E5,0_4px_8px_-5px_rgba(0,0,0,0.15)] rounded-full"
+                                        : " mm:text-[16px] text-[12px] text-gray-600 hover:text-gray-800 font-medium  flex items-center mm:gap-3 gap-1 rounded-full py-2 px-3  "
                                 }>
                                 <MoneyOff />
                                 Withdrawal List
@@ -148,8 +141,8 @@ function Sidebar() {
                                 to="/dashboard/transactions-management"
                                 className={({ isActive }) =>
                                     isActive
-                                        ? " mm:text-[16px] text-[12px] bg-[#7065F0] font-semibold  flex items-center mm:gap-3 gap-1 text-[#FFFFFF] py-2 px-3 shadow-[0_0_0_1px_#E5E5E5,0_4px_8px_-5px_rgba(0,0,0,0.15)] rounded-lg"
-                                        : " mm:text-[16px] text-[12px] text-gray-600 hover:text-gray-800 font-medium  flex items-center mm:gap-3 gap-1 rounded-lg py-2 px-3  "
+                                        ? " mm:text-[16px] text-[12px] bg-blue-700 font-semibold  flex items-center mm:gap-3 gap-1 text-[#FFFFFF] py-2 px-3 shadow-[0_0_0_1px_#E5E5E5,0_4px_8px_-5px_rgba(0,0,0,0.15)] rounded-full"
+                                        : " mm:text-[16px] text-[12px] text-gray-600 hover:text-gray-800 font-medium  flex items-center mm:gap-3 gap-1 rounded-full py-2 px-3  "
                                 }>
                                 <BrightnessHigh />
                                 Transaction M
@@ -158,8 +151,8 @@ function Sidebar() {
                                 to="/dashboard/users-management"
                                 className={({ isActive }) =>
                                     isActive
-                                        ? " mm:text-[16px] text-[12px] bg-[#7065F0] font-semibold  flex items-center mm:gap-3 gap-1 text-[#FFFFFF] py-2 px-3 shadow-[0_0_0_1px_#E5E5E5,0_4px_8px_-5px_rgba(0,0,0,0.15)] rounded-lg"
-                                        : " mm:text-[16px] text-[12px] text-gray-600 hover:text-gray-800 font-medium  flex items-center mm:gap-3 gap-1 rounded-lg py-2 px-3  "
+                                        ? " mm:text-[16px] text-[12px] bg-blue-700 font-semibold  flex items-center mm:gap-3 gap-1 text-[#FFFFFF] py-2 px-3 shadow-[0_0_0_1px_#E5E5E5,0_4px_8px_-5px_rgba(0,0,0,0.15)] rounded-full"
+                                        : " mm:text-[16px] text-[12px] text-gray-600 hover:text-gray-800 font-medium  flex items-center mm:gap-3 gap-1 rounded-full py-2 px-3  "
                                 }>
                                 <Group />
                                 Users
@@ -168,13 +161,13 @@ function Sidebar() {
                                 to="/dashboard/profile"
                                 className={({ isActive }) =>
                                     isActive
-                                        ? " mm:text-[16px] text-[12px] bg-[#7065F0] font-semibold  flex items-center mm:gap-3 gap-1 text-[#FFFFFF] py-2 px-3 shadow-[0_0_0_1px_#E5E5E5,0_4px_8px_-5px_rgba(0,0,0,0.15)] rounded-lg"
-                                        : " mm:text-[16px] text-[12px] text-gray-600 hover:text-gray-800 font-medium  flex items-center mm:gap-3 gap-1 rounded-lg py-2 px-3  "
+                                        ? " mm:text-[16px] text-[12px] bg-blue-700 font-semibold  flex items-center mm:gap-3 gap-1 text-[#FFFFFF] py-2 px-3 shadow-[0_0_0_1px_#E5E5E5,0_4px_8px_-5px_rgba(0,0,0,0.15)] rounded-full"
+                                        : " mm:text-[16px] text-[12px] text-gray-600 hover:text-gray-800 font-medium  flex items-center mm:gap-3 gap-1 rounded-full py-2 px-3  "
                                 }>
                                 <PersonIcon />
                                 Profile
                             </NavLink>
-                            <span className=" mm:text-[16px] text-[12px] bg-red-500 font-semibold  flex items-center mm:gap-3 gap-1 text-[#FFFFFF] py-2 px-3 shadow-[0_0_0_1px_#E5E5E5,0_4px_8px_-5px_rgba(0,0,0,0.15)] rounded-lg cursor-pointer" onClick={handleLogOutUser}><Logout fontSize="small" /> Logout</span>
+                            <span className=" mm:text-[16px] text-[12px] bg-red-500 font-semibold  flex items-center mm:gap-3 gap-1 text-[#FFFFFF] py-2 px-3 shadow-[0_0_0_1px_#E5E5E5,0_4px_8px_-5px_rgba(0,0,0,0.15)] rounded-full cursor-pointer" onClick={handleLogOutUser}><Logout fontSize="small" /> Logout</span>
 
                         </section> :
                         <section className=" flex flex-col gap-1">
@@ -187,13 +180,13 @@ function Sidebar() {
                                 to="/dashboard/profile"
                                 className={({ isActive }) =>
                                     isActive
-                                        ? " mm:text-[16px] text-[12px] bg-[#7065F0] font-semibold  flex items-center mm:gap-3 gap-1 text-[#FFFFFF] py-2 px-3 shadow-[0_0_0_1px_#E5E5E5,0_4px_8px_-5px_rgba(0,0,0,0.15)] rounded-lg"
-                                        : " mm:text-[16px] text-[12px] text-gray-600 hover:text-gray-800 font-medium  flex items-center mm:gap-3 gap-1 rounded-lg py-2 px-3  "
+                                        ? " mm:text-[16px] text-[12px] bg-blue-700 font-semibold  flex items-center mm:gap-3 gap-1 text-[#FFFFFF] py-2 px-3 shadow-[0_0_0_1px_#E5E5E5,0_4px_8px_-5px_rgba(0,0,0,0.15)] rounded-full"
+                                        : " mm:text-[16px] text-[12px] text-gray-600 hover:text-gray-800 font-medium  flex items-center mm:gap-3 gap-1 rounded-full py-2 px-3  "
                                 }>
                                 < PersonIcon />
                                 Profile
                             </NavLink>
-                            <span className=" mm:text-[16px] text-[12px] bg-red-500 font-semibold  flex items-center mm:gap-3 gap-1 text-[#FFFFFF] py-2 px-3 shadow-[0_0_0_1px_#E5E5E5,0_4px_8px_-5px_rgba(0,0,0,0.15)] rounded-lg cursor-pointer" onClick={handleLogOutUser}><Logout fontSize="small" /> Logout</span>
+                            <span className=" mm:text-[16px] text-[12px] bg-red-500 font-semibold  flex items-center mm:gap-3 gap-1 text-[#FFFFFF] py-2 px-3 shadow-[0_0_0_1px_#E5E5E5,0_4px_8px_-5px_rgba(0,0,0,0.15)] rounded-full cursor-pointer" onClick={handleLogOutUser}><Logout fontSize="small" /> Logout</span>
 
                         </section>}
 
