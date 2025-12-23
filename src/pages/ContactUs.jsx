@@ -5,6 +5,7 @@ import React from 'react'
 function ContactUs() {
     return (
         <div className=' min-h-screen'>
+            <title>Contact Us | Noventra NTB Support & Assistance</title>
             <div className=" flex items-center justify-center pt-24">
                 <div className=" flex flex-col md:gap-6 gap-3.5 items-center mb-2">
                     <motion.p initial={{ y: 40, opacity: 0 }}
