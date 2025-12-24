@@ -27,6 +27,7 @@ import ContactUs from './pages/ContactUs'
 import Investments from './pages/Investments'
 import Loans from './pages/Loans'
 import Transfer from './Dashboard/Dashboardpages/Transfer'
+import SmartCard from './Dashboard/Dashboardpages/SmartCard'
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
           <Route path='/dashboard' element={<Dashcontainer />} >
             <Route index element={<Dashboard />} />
             <Route path='transfer' element={<Transfer />} />
+            <Route path='get-card' element={<SmartCard />} />
             <Route path='withdraw' element={<Withdraw />} />
             <Route path='deposit' element={<Deposit />} />
             <Route path='create-escrow' element={<CreateEscrow />} />

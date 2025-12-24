@@ -26,7 +26,7 @@ function Loader({ showSignin }) {
                 </div>
             </div>
             {showSignin &&
-                <p className="text-white">Please <Link to='/signin' className=" text-blue-700 underline"> Signin</Link> to continue !</p>
+                <p className="text-black">Please <Link to='/signin' className=" text-blue-700 underline"> Signin</Link> to continue !</p>
             }
         </div>
     );

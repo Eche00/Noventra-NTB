@@ -45,8 +45,7 @@ export default function Transfer() {
 
                 {/* Header */}
                 <div className="flex items-center justify-between mb-6">
-                    <button className="text-gray-600">← Go back</button>
-                    <button className="text-blue-600 font-medium">Skip Step →</button>
+                    <button className="text-gray-600 disabled:cursor-not-allowed" onClick={() => setCurrentStep(currentStep - 1)} disabled={currentStep === 0}>← Go back</button>
                 </div>
 
                 {/* Title */}
@@ -72,10 +71,10 @@ export default function Transfer() {
                             <div key={index} className="flex gap-4 items-start">
                                 <div
                                     className={`w-7 h-7 rounded-full flex items-center justify-center border-2 ${index < currentStep
-                                            ? "bg-blue-600 border-blue-600 text-white"
-                                            : index === currentStep
-                                                ? "border-blue-600 text-blue-600"
-                                                : "border-gray-300 text-gray-300"
+                                        ? "bg-blue-600 border-blue-600 text-white"
+                                        : index === currentStep
+                                            ? "border-blue-600 text-blue-600"
+                                            : "border-gray-300 text-gray-300"
                                         }`}
                                 >
                                     {index < currentStep ? "✓" : ""}
@@ -83,8 +82,8 @@ export default function Transfer() {
 
                                 <p
                                     className={`font-medium ${index <= currentStep
-                                            ? "text-black"
-                                            : "text-gray-400"
+                                        ? "text-black"
+                                        : "text-gray-400"
                                         }`}
                                 >
                                     {label}
@@ -172,8 +171,8 @@ export default function Transfer() {
                     onClick={handleNext}
                     disabled={currentStep === 0 && !canProceed}
                     className={`mt-8 w-full py-4 rounded-xl font-semibold transition ${currentStep === 0 && !canProceed
-                            ? "bg-gray-300 cursor-not-allowed"
-                            : "bg-blue-600 hover:bg-blue-700 text-white"
+                        ? "bg-gray-300 cursor-not-allowed"
+                        : "bg-blue-600 hover:bg-blue-700 text-white"
                         }`}
                 >
                     {isCompleted ? "Transfer Complete" : "Continue"}

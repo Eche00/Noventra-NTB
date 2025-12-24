@@ -17,14 +17,9 @@ function Dashcontainer() {
                     <div className="mm:flex hidden">
                         <Sidebar />
                     </div>
-
-
-                    <section className="mm:pl-[270px] flex-1 flex flex-col min-h-screen overflow-y-scroll">
-
-                        <div className='min-h-screen sm:py-0 py-32 bg-gray-100'>
-                            <Outlet />
-                        </div>
-                    </section>
+                    <div className='mm:pl-[270px] py-18 sm:py-0 min-h-screen overflow-scroll bg-gray-100'>
+                        <Outlet />
+                    </div>
                 </div> :
                 <Userverifying />
             }

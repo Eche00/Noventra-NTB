@@ -1,7 +1,7 @@
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { useNavBar } from "../utils/navbarcontroller";
-import { Create, Dashboard, House, Payment, Logout, Group, MoneyOff, BrightnessHigh } from "@mui/icons-material";
+import { Create, Dashboard, House, Payment, Logout, Group, MoneyOff, BrightnessHigh, Atm, CreditCard } from "@mui/icons-material";
 import SpaceDashboardIcon from '@mui/icons-material/SpaceDashboard';
 import CurrencyExchangeIcon from '@mui/icons-material/CurrencyExchange';
 import AssuredWorkloadIcon from '@mui/icons-material/AssuredWorkload';
@@ -29,6 +29,7 @@ function Sidebar() {
                         {/* links  */}
                         <NavLink
                             to="/dashboard/"
+                            end
                             className={({ isActive }) =>
                                 isActive
                                     ? " mm:text-[16px] text-[12px] bg-blue-700 font-semibold  flex items-center mm:gap-3 gap-1 text-[#FFFFFF] py-2 px-3 shadow-[0_0_0_1px_#E5E5E5,0_4px_8px_-5px_rgba(0,0,0,0.15)] rounded-full"
@@ -69,14 +70,14 @@ function Sidebar() {
                         </NavLink>
 
                         <NavLink
-                            to="/dashboard/properties"
+                            to="/dashboard/get-card"
                             className={({ isActive }) =>
                                 isActive
                                     ? " mm:text-[16px] text-[12px] bg-blue-700 font-semibold  flex items-center mm:gap-3 gap-1 text-[#FFFFFF] py-2 px-3 shadow-[0_0_0_1px_#E5E5E5,0_4px_8px_-5px_rgba(0,0,0,0.15)] rounded-full"
                                     : " mm:text-[16px] text-[12px] text-gray-600 hover:text-gray-800 font-medium  flex items-center mm:gap-3 gap-1 rounded-full py-2 px-3  "
                             }>
-                            <RoofingIcon />
-                            Sky Card
+                            <CreditCard />
+                            Get Card
                         </NavLink>
                         <NavLink
                             to="/dashboard/properties"
