@@ -80,7 +80,7 @@ function Sidebar() {
                             Get Card
                         </NavLink>
                         <NavLink
-                            to="/dashboard/properties"
+                            to="/dashboard/loans"
                             className={({ isActive }) =>
                                 isActive
                                     ? " mm:text-[16px] text-[12px] bg-blue-700 font-semibold  flex items-center mm:gap-3 gap-1 text-[#FFFFFF] py-2 px-3 shadow-[0_0_0_1px_#E5E5E5,0_4px_8px_-5px_rgba(0,0,0,0.15)] rounded-full"

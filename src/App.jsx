@@ -53,6 +53,7 @@ function App() {
             <Route index element={<Dashboard />} />
             <Route path='transfer' element={<Transfer />} />
             <Route path='get-card' element={<SmartCard />} />
+            <Route path='loans' element={<Loans />} />
             <Route path='withdraw' element={<Withdraw />} />
             <Route path='deposit' element={<Deposit />} />
             <Route path='create-escrow' element={<CreateEscrow />} />

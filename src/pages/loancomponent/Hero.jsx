@@ -1,7 +1,8 @@
 import { motion } from "framer-motion"
+import { useLocation } from "react-router-dom"
 
 function Hero() {
-
+    const { pathname } = useLocation()
     return (
         <div className='  w-[90%] mx-auto z-10'>
             {/* container  */}
@@ -49,20 +50,21 @@ function Hero() {
 
                 </motion.section>
                 {/* right hero  */}
-                <motion.section initial={{ scale: 0.85, opacity: 0, y: 20 }}
-                    whileInView={{ scale: 1, opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{
-                        stiffness: 220,
-                        damping: 22,
-                        duration: 1,
-                        delay: 0.2
-                    }} className='flex flex-1 items-center justify-center bg-blue-700/30  rounded-4xl p-4 relative z-10 '>
+                {pathname === '/loans' && (
+                    <motion.section initial={{ scale: 0.85, opacity: 0, y: 20 }}
+                        whileInView={{ scale: 1, opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{
+                            stiffness: 220,
+                            damping: 22,
+                            duration: 1,
+                            delay: 0.2
+                        }} className='flex flex-1 items-center justify-center bg-blue-700/30  rounded-4xl p-4 relative z-10 '>
 
 
-                    <img src="/iPhone-13-PRO.png" alt="hero image" className=' max-h-[70vh] object-cover' />
+                        <img src="/iPhone-13-PRO.png" alt="hero image" className=' max-h-[70vh] object-cover' />
 
-                </motion.section>
+                    </motion.section>)}
             </main>
         </div>
     )
